@@ -7,7 +7,7 @@ import javax.swing.JMenuBar;
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame {
 	private static MainFrame instance;
-	private  StoryPane panel;
+	private  Scene scene;
 	
 	private MainFrame() {
 		setTitle(MainFrameConfig.TITLE);
@@ -37,18 +37,18 @@ public class MainFrame extends JFrame {
 		return instance;
 	}
 	
-	public void setGamePanel(StoryPane panel) {
-		if(null!= this.panel) {
-			remove(this.panel);	
+	public void setScene(Scene scene) {
+		if(null!= this.scene) {
+			remove(this.scene);	
 		}
-		this.panel = panel;
-		add(this.panel);
+		this.scene = scene;
+		add(this.scene);
 		setVisible(true);
 	}
 
 
 	public void initialize() {
-		setGamePanel(new StoryPane(0));
+		setScene(new Scene(0));
 		
 	}
 	

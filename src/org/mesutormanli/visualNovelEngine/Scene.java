@@ -9,48 +9,48 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
-public class StoryPane extends JPanel {
-	private StoryPaneConfig panelConfig;
+public class Scene extends JPanel {
+	private SceneConfig sceneConfig;
 	private JPanel textPanel;
 	private JPanel imagePanel;
 	private JPanel buttonPanel;
 
-	public StoryPane(int panelIndex) {
-		this(StoryPaneConfigFactory.getPanelConfig(panelIndex));
+	public Scene(int sceneIndex) {
+		this(SceneConfigFactory.getPanelConfig(sceneIndex));
 
 	}
 
-	public StoryPane(StoryPaneConfig panelConfig) {
+	public Scene(SceneConfig sceneConfig) {
 
-		setPanelConfig(panelConfig);
+		setSceneConfig(sceneConfig);
 		setLayout(new BorderLayout());
 
 		// Text Panel
-		setTextPanel(new JPanel(StoryPaneConfig.TEXT_PANEL_LAYOUT));
+		setTextPanel(new JPanel(SceneConfig.TEXT_PANEL_LAYOUT));
 		getTextPanel().setBackground(Color.WHITE);
-		getTextPanel().add(new JLabel(getPanelConfig().getText()));
+		getTextPanel().add(new JLabel(getSceneConfig().getText()));
 
 		// Image Panel
-		setImagePanel(new JPanel(StoryPaneConfig.IMAGE_PANEL_LAYOUT));
+		setImagePanel(new JPanel(SceneConfig.IMAGE_PANEL_LAYOUT));
 		getImagePanel().setBackground(Color.GRAY);
-		getImagePanel().add(new JLabel("There will be image of Frame " + getPanelConfig().getPanelIndex() + "."));
+		getImagePanel().add(new JLabel("There will be image of Frame " + getSceneConfig().getSceneIndex() + "."));
 		//getImagePanel().add(new JLabel(new ImageIcon(getPanelConfig().getImagePath())));
 
 		// Button Panel
-		setButtonPanel(new JPanel(StoryPaneConfig.BUTTON_PANEL_LAYOUT));
+		setButtonPanel(new JPanel(SceneConfig.BUTTON_PANEL_LAYOUT));
 		getButtonPanel().setBackground(Color.BLACK);
 		
 		//TODO: Button Config Class
-		JButton westButton = new JButton(getPanelConfig().getWestButtonText());
-		westButton.addActionListener(new GameButtonActionListener(getPanelConfig().getWestButtonPanelIndex()));
+		JButton westButton = new JButton(getSceneConfig().getWestButtonText());
+		westButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getWestButtonSceneIndex()));
 		getButtonPanel().add(westButton);
 		
-		JButton centerButton = new JButton(getPanelConfig().getCenterButtonText());
-		centerButton.addActionListener(new GameButtonActionListener(getPanelConfig().getCenterButtonPanelIndex()));
+		JButton centerButton = new JButton(getSceneConfig().getCenterButtonText());
+		centerButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getCenterButtonSceneIndex()));
 		getButtonPanel().add(centerButton);
 		
-		JButton eastButton = new JButton(getPanelConfig().getEastButtonText());
-		eastButton.addActionListener(new GameButtonActionListener(getPanelConfig().getEastButtonPanelIndex()));
+		JButton eastButton = new JButton(getSceneConfig().getEastButtonText());
+		eastButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getEastButtonSceneIndex()));
 		getButtonPanel().add(eastButton);
 
 		// Add subpanels to GamePanel
@@ -84,12 +84,12 @@ public class StoryPane extends JPanel {
 		this.buttonPanel = buttonPanel;
 	}
 
-	public StoryPaneConfig getPanelConfig() {
-		return panelConfig;
+	public SceneConfig getSceneConfig() {
+		return sceneConfig;
 	}
 
-	public void setPanelConfig(StoryPaneConfig panelConfig) {
-		this.panelConfig = panelConfig;
+	public void setSceneConfig(SceneConfig panelConfig) {
+		this.sceneConfig = panelConfig;
 	}
 
 }

@@ -3,37 +3,37 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 
-public class StoryPaneConfig {
+public class SceneConfig {
 	
 	public static final BorderLayout TEXT_PANEL_LAYOUT = new BorderLayout(10, 10);
 	public static final BorderLayout IMAGE_PANEL_LAYOUT = new BorderLayout(10, 10);
 	public static final FlowLayout BUTTON_PANEL_LAYOUT = new FlowLayout(FlowLayout.CENTER, 10, 20);
 
-	private int panelIndex;
+	private int sceneIndex;
 	private String text;
 	private String imagePath;
 	private String westButtonText;
-	private int westButtonPanelIndex;
+	private int westButtonSceneIndex;
 	private String centerButtonText;
-	private int centerButtonPanelIndex;
+	private int centerButtonSceneIndex;
 	private String eastButtonText;
-	private int eastButtonPanelIndex;
+	private int eastButtonSceneIndex;
 
-	public StoryPaneConfig(int panelIndex, String text, String imagePath, String westButtonText, int westButtonPanelIndex,
-			String centerButtonText, int centerButtonPanelIndex, String eastButtonText, int eastButtonPanelIndex) {
-		this.panelIndex = panelIndex;
+	public SceneConfig(int panelIndex, String text, String imagePath, String westButtonText, int westButtonSceneIndex,
+			String centerButtonText, int centerButtonSceneIndex, String eastButtonText, int eastButtonSceneIndex) {
+		this.sceneIndex = panelIndex;
 		this.text = text;
 		this.imagePath = imagePath;
 		this.westButtonText = westButtonText;
-		this.westButtonPanelIndex = westButtonPanelIndex;
+		this.westButtonSceneIndex = westButtonSceneIndex;
 		this.centerButtonText = centerButtonText;
-		this.centerButtonPanelIndex = centerButtonPanelIndex;
+		this.centerButtonSceneIndex = centerButtonSceneIndex;
 		this.eastButtonText = eastButtonText;
-		this.eastButtonPanelIndex = eastButtonPanelIndex;
+		this.eastButtonSceneIndex = eastButtonSceneIndex;
 	}
 
-	public int getPanelIndex() {
-		return panelIndex;
+	public int getSceneIndex() {
+		return sceneIndex;
 	}
 
 	public String getText() {
@@ -48,24 +48,24 @@ public class StoryPaneConfig {
 		return westButtonText;
 	}
 
-	public int getWestButtonPanelIndex() {
-		return westButtonPanelIndex;
+	public int getWestButtonSceneIndex() {
+		return westButtonSceneIndex;
 	}
 
 	public String getCenterButtonText() {
 		return centerButtonText;
 	}
 
-	public int getCenterButtonPanelIndex() {
-		return centerButtonPanelIndex;
+	public int getCenterButtonSceneIndex() {
+		return centerButtonSceneIndex;
 	}
 
 	public String getEastButtonText() {
 		return eastButtonText;
 	}
 
-	public int getEastButtonPanelIndex() {
-		return eastButtonPanelIndex;
+	public int getEastButtonSceneIndex() {
+		return eastButtonSceneIndex;
 	}
 
 }

@@ -3,18 +3,18 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class GameButtonActionListener implements ActionListener {
-	private StoryPaneConfig nextPanelConfig;
+public class SceneButtonActionListener implements ActionListener {
+	private SceneConfig nextSceneConfig;
 
-	public GameButtonActionListener(int nextPanelIndex) {
-		this.nextPanelConfig = StoryPaneConfigFactory.getPanelConfig(nextPanelIndex);
+	public SceneButtonActionListener(int nextSceneIndex) {
+		this.nextSceneConfig = SceneConfigFactory.getPanelConfig(nextSceneIndex);
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(null != nextPanelConfig) {
-			StoryPane nextPanel = new StoryPane(nextPanelConfig);
-			MainFrame.getInstance().setGamePanel(nextPanel);
+		if(null != nextSceneConfig) {
+			Scene nextPanel = new Scene(nextSceneConfig);
+			MainFrame.getInstance().setScene(nextPanel);
 		}else {
 			MainFrame.getInstance().dispose();
 		}
