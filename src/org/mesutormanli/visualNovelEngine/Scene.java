@@ -20,6 +20,9 @@ public class Scene extends JPanel {
 
 	}
 
+	/**
+	 * @wbp.parser.constructor
+	 */
 	public Scene(SceneConfig sceneConfig) {
 
 		setSceneConfig(sceneConfig);

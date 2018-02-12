@@ -42,7 +42,7 @@ public class MainFrame extends JFrame {
 			remove(this.scene);	
 		}
 		this.scene = scene;
-		add(this.scene);
+		getContentPane().add(this.scene);
 		setVisible(true);
 	}
 
