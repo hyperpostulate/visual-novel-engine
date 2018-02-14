@@ -1,15 +1,25 @@
 package org.mesutormanli.visualNovelEngine;
 
+
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
+
+import org.pushingpixels.substance.api.skin.SubstanceTwilightLookAndFeel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @SuppressWarnings("serial")
-public class MainFrame extends JFrame {
+public class MainFrame extends JFrame{
+	private static final Logger LOGGER = LoggerFactory.getLogger(MainFrame.class);
 	private static MainFrame instance;
 	private  Scene scene;
 	
 	private MainFrame() {
+	
+		LOGGER.info("MainFrame invoked.");
 		setTitle(MainFrameConfig.TITLE);
 		setSize(MainFrameConfig.DIMENSION);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
@@ -44,6 +54,7 @@ public class MainFrame extends JFrame {
 		this.scene = scene;
 		getContentPane().add(this.scene);
 		setVisible(true);
+		LOGGER.info("Scene "+ scene.getSceneConfig().getSceneIndex() + " is present.");
 	}
 
 

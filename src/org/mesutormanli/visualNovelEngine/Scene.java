@@ -2,7 +2,6 @@ package org.mesutormanli.visualNovelEngine;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
-
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -37,21 +36,22 @@ public class Scene extends JPanel {
 		setImagePanel(new JPanel(SceneConfig.IMAGE_PANEL_LAYOUT));
 		getImagePanel().setBackground(Color.GRAY);
 		getImagePanel().add(new JLabel("There will be image of Frame " + getSceneConfig().getSceneIndex() + "."));
-		//getImagePanel().add(new JLabel(new ImageIcon(getPanelConfig().getImagePath())));
+		// getImagePanel().add(new JLabel(new
+		// ImageIcon(getPanelConfig().getImagePath())));
 
 		// Button Panel
 		setButtonPanel(new JPanel(SceneConfig.BUTTON_PANEL_LAYOUT));
 		getButtonPanel().setBackground(Color.BLACK);
-		
-		//TODO: Button Config Class
+
+		// TODO: Button Config Class
 		JButton westButton = new JButton(getSceneConfig().getWestButtonText());
 		westButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getWestButtonSceneIndex()));
 		getButtonPanel().add(westButton);
-		
+
 		JButton centerButton = new JButton(getSceneConfig().getCenterButtonText());
 		centerButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getCenterButtonSceneIndex()));
 		getButtonPanel().add(centerButton);
-		
+
 		JButton eastButton = new JButton(getSceneConfig().getEastButtonText());
 		eastButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getEastButtonSceneIndex()));
 		getButtonPanel().add(eastButton);
