@@ -3,6 +3,8 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import org.mesutormanli.visualNovelEngine.config.SceneConfig;
+import org.mesutormanli.visualNovelEngine.config.SceneConfigFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

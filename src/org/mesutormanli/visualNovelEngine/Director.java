@@ -15,11 +15,12 @@ public class Director {
 			public void run() {
 
 				try {
+					//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 					UIManager.setLookAndFeel(new SubstanceRavenLookAndFeel());
 					MainFrame.getInstance().initialize();
 				} catch (Exception e) {
-					LOGGER.error("MainFrame could not be initialized. Exiting...", e);
 					MainFrame.getInstance().dispose();
+					LOGGER.error("MainFrame could not be initialized. Exiting...", e);
 				}
 			}
 

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sceneConfigContainer>
+	<sceneConfig>
+		<sceneIndex>0</sceneIndex>
+		<text>There will be text of Scene 0.</text>
+		<westButtonText>To Scene 1</westButtonText>
+		<westButtonSceneIndex>1</westButtonSceneIndex>
+		<centerButtonText>To Scene 2</centerButtonText>
+		<centerButtonSceneIndex>2</centerButtonSceneIndex>
+		<eastButtonText>To Scene 3</eastButtonText>
+		<eastButtonSceneIndex>3</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>1</sceneIndex>
+		<text>There will be text of Scene 1.</text>
+		<westButtonText>To Scene 2</westButtonText>
+		<westButtonSceneIndex>2</westButtonSceneIndex>
+		<centerButtonText>To Scene 3</centerButtonText>
+		<centerButtonSceneIndex>3</centerButtonSceneIndex>
+		<eastButtonText>To Scene 4</eastButtonText>
+		<eastButtonSceneIndex>4</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>2</sceneIndex>
+		<text>There will be text of Scene 2.</text>
+		<westButtonText>To Scene 3</westButtonText>
+		<westButtonSceneIndex>3</westButtonSceneIndex>
+		<centerButtonText>To Scene 4</centerButtonText>
+		<centerButtonSceneIndex>4</centerButtonSceneIndex>
+		<eastButtonText>To Scene 5</eastButtonText>
+		<eastButtonSceneIndex>5</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>3</sceneIndex>
+		<text>There will be text of Scene 3.</text>
+		<westButtonText>To Scene 4</westButtonText>
+		<westButtonSceneIndex>4</westButtonSceneIndex>
+		<centerButtonText>To Scene 5</centerButtonText>
+		<centerButtonSceneIndex>5</centerButtonSceneIndex>
+		<eastButtonText>To Scene 6</eastButtonText>
+		<eastButtonSceneIndex>6</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>4</sceneIndex>
+		<text>There will be text of Scene 4.</text>
+		<westButtonText>To Scene 5</westButtonText>
+		<westButtonSceneIndex>5</westButtonSceneIndex>
+		<centerButtonText>To Scene 6</centerButtonText>
+		<centerButtonSceneIndex>6</centerButtonSceneIndex>
+		<eastButtonText>To Scene 7</eastButtonText>
+		<eastButtonSceneIndex>7</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>5</sceneIndex>
+		<text>There will be text of Scene 5.</text>
+		<westButtonText>To Scene 6</westButtonText>
+		<westButtonSceneIndex>6</westButtonSceneIndex>
+		<centerButtonText>To Scene 7</centerButtonText>
+		<centerButtonSceneIndex>7</centerButtonSceneIndex>
+		<eastButtonText>To Scene 8</eastButtonText>
+		<eastButtonSceneIndex>8</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>6</sceneIndex>
+		<text>There will be text of Scene 6.</text>
+		<westButtonText>To Scene 7</westButtonText>
+		<westButtonSceneIndex>7</westButtonSceneIndex>
+		<centerButtonText>To Scene 8</centerButtonText>
+		<centerButtonSceneIndex>8</centerButtonSceneIndex>
+		<eastButtonText>To Scene 9</eastButtonText>
+		<eastButtonSceneIndex>9</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>7</sceneIndex>
+		<text>There will be text of Scene 7.</text>
+		<westButtonText>To Scene 8</westButtonText>
+		<westButtonSceneIndex>8</westButtonSceneIndex>
+		<centerButtonText>To Scene 9</centerButtonText>
+		<centerButtonSceneIndex>9</centerButtonSceneIndex>
+		<eastButtonText>To Scene 0</eastButtonText>
+		<eastButtonSceneIndex>0</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>8</sceneIndex>
+		<text>There will be text of Scene 8.</text>
+		<westButtonText>To Scene 9</westButtonText>
+		<westButtonSceneIndex>9</westButtonSceneIndex>
+		<centerButtonText>To Scene 0</centerButtonText>
+		<centerButtonSceneIndex>0</centerButtonSceneIndex>
+		<eastButtonText>To Scene 1</eastButtonText>
+		<eastButtonSceneIndex>1</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>9</sceneIndex>
+		<text>There will be text of Scene 9.</text>
+		<westButtonText>To Scene 0</westButtonText>
+		<westButtonSceneIndex>0</westButtonSceneIndex>
+		<centerButtonText>To Scene 1</centerButtonText>
+		<centerButtonSceneIndex>1</centerButtonSceneIndex>
+		<eastButtonText>To Scene 12</eastButtonText>
+		<eastButtonSceneIndex>12</eastButtonSceneIndex>
+	</sceneConfig>
+</sceneConfigContainer>

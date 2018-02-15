@@ -4,12 +4,9 @@ package org.mesutormanli.visualNovelEngine;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-
-import org.pushingpixels.substance.api.skin.SubstanceTwilightLookAndFeel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.mesutormanli.visualNovelEngine.config.MainFrameConfig;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{

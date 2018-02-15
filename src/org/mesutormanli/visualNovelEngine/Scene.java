@@ -6,6 +6,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import org.mesutormanli.visualNovelEngine.config.MainFrameConfig;
+import org.mesutormanli.visualNovelEngine.config.SceneConfig;
+import org.mesutormanli.visualNovelEngine.config.SceneConfigFactory;
 
 @SuppressWarnings("serial")
 public class Scene extends JPanel {
@@ -28,19 +31,19 @@ public class Scene extends JPanel {
 		setLayout(new BorderLayout());
 
 		// Text Panel
-		setTextPanel(new JPanel(SceneConfig.TEXT_PANEL_LAYOUT));
+		setTextPanel(new JPanel(MainFrameConfig.TEXT_PANEL_LAYOUT));
 		getTextPanel().setBackground(Color.WHITE);
 		getTextPanel().add(new JLabel(getSceneConfig().getText()));
 
 		// Image Panel
-		setImagePanel(new JPanel(SceneConfig.IMAGE_PANEL_LAYOUT));
+		setImagePanel(new JPanel(MainFrameConfig.IMAGE_PANEL_LAYOUT));
 		getImagePanel().setBackground(Color.GRAY);
 		getImagePanel().add(new JLabel("There will be image of Frame " + getSceneConfig().getSceneIndex() + "."));
 		// getImagePanel().add(new JLabel(new
 		// ImageIcon(getPanelConfig().getImagePath())));
 
 		// Button Panel
-		setButtonPanel(new JPanel(SceneConfig.BUTTON_PANEL_LAYOUT));
+		setButtonPanel(new JPanel(MainFrameConfig.BUTTON_PANEL_LAYOUT));
 		getButtonPanel().setBackground(Color.BLACK);
 
 		// TODO: Button Config Class
