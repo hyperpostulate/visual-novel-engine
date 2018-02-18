@@ -2,13 +2,22 @@ package org.mesutormanli.visualNovelEngine;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.io.File;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import org.mesutormanli.visualNovelEngine.config.MainFrameConfig;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+import javax.swing.border.TitledBorder;
+
+import org.mesutormanli.visualNovelEngine.config.MainConfig;
 import org.mesutormanli.visualNovelEngine.config.SceneConfig;
 import org.mesutormanli.visualNovelEngine.config.SceneConfigFactory;
+import org.mesutormanli.visualNovelEngine.util.RelativeLayout;
+import org.mesutormanli.visualNovelEngine.util.StringUtils;
 
 @SuppressWarnings("serial")
 public class Scene extends JPanel {
@@ -28,41 +37,43 @@ public class Scene extends JPanel {
 	public Scene(SceneConfig sceneConfig) {
 
 		setSceneConfig(sceneConfig);
-		setLayout(new BorderLayout());
+		setLayout(MainConfig.SCENE_LAYOUT);
+		setBorder(new TitledBorder(getSceneConfig().getSceneHeadline()));
 
 		// Text Panel
-		setTextPanel(new JPanel(MainFrameConfig.TEXT_PANEL_LAYOUT));
-		getTextPanel().setBackground(Color.WHITE);
-		getTextPanel().add(new JLabel(getSceneConfig().getText()));
+		setTextPanel(new JPanel(MainConfig.TEXT_PANEL_LAYOUT));
+		getTextPanel().add(new JLabel(StringUtils.wrapLabelString(getSceneConfig().getSceneText())));
 
 		// Image Panel
-		setImagePanel(new JPanel(MainFrameConfig.IMAGE_PANEL_LAYOUT));
-		getImagePanel().setBackground(Color.GRAY);
-		getImagePanel().add(new JLabel("There will be image of Frame " + getSceneConfig().getSceneIndex() + "."));
-		// getImagePanel().add(new JLabel(new
-		// ImageIcon(getPanelConfig().getImagePath())));
+		setImagePanel(new JPanel(MainConfig.IMAGE_PANEL_LAYOUT));
+		getImagePanel().add(new JLabel(new ImageIcon("./resources/images/" + MainConfig.IMAGE_FILE_PREFIX
+				+ getSceneConfig().getSceneIndex() + MainConfig.IMAGE_FILE_POSTFIX)));
 
 		// Button Panel
-		setButtonPanel(new JPanel(MainFrameConfig.BUTTON_PANEL_LAYOUT));
-		getButtonPanel().setBackground(Color.BLACK);
+		setButtonPanel(new JPanel(MainConfig.BUTTON_PANEL_LAYOUT));
 
-		// TODO: Button Config Class
+		if(StringUtils.isNotEmpty(getSceneConfig().getWestButtonText())) {
 		JButton westButton = new JButton(getSceneConfig().getWestButtonText());
 		westButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getWestButtonSceneIndex()));
 		getButtonPanel().add(westButton);
+		}
 
+		if(StringUtils.isNotEmpty(getSceneConfig().getCenterButtonText())) {
 		JButton centerButton = new JButton(getSceneConfig().getCenterButtonText());
 		centerButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getCenterButtonSceneIndex()));
 		getButtonPanel().add(centerButton);
+		}
 
+		if(StringUtils.isNotEmpty(getSceneConfig().getEastButtonText())) {
 		JButton eastButton = new JButton(getSceneConfig().getEastButtonText());
 		eastButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getEastButtonSceneIndex()));
 		getButtonPanel().add(eastButton);
+		}
 
 		// Add subpanels to GamePanel
-		add(getTextPanel(), BorderLayout.NORTH);
-		add(getImagePanel(), BorderLayout.CENTER);
-		add(getButtonPanel(), BorderLayout.SOUTH);
+		add(getTextPanel(), new Float(20));
+		add(getImagePanel(), new Float(70));
+		add(getButtonPanel(), new Float(10));
 
 	}
 

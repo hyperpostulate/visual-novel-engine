@@ -3,7 +3,9 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.EventQueue;
 
 import javax.swing.UIManager;
-import org.pushingpixels.substance.api.skin.*;
+import javax.swing.plaf.nimbus.NimbusLookAndFeel;
+
+import org.pushingpixels.substance.api.skin.SubstanceRavenLookAndFeel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,7 +17,7 @@ public class Director {
 			public void run() {
 
 				try {
-					//UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+					//UIManager.setLookAndFeel(new NimbusLookAndFeel());
 					UIManager.setLookAndFeel(new SubstanceRavenLookAndFeel());
 					MainFrame.getInstance().initialize();
 				} catch (Exception e) {

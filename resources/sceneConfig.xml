@@ -2,7 +2,8 @@
 <sceneConfigContainer>
 	<sceneConfig>
 		<sceneIndex>0</sceneIndex>
-		<text>There will be text of Scene 0.</text>
+		<sceneHeadline>Headline of Scene 0</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 1</westButtonText>
 		<westButtonSceneIndex>1</westButtonSceneIndex>
 		<centerButtonText>To Scene 2</centerButtonText>
@@ -12,7 +13,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>1</sceneIndex>
-		<text>There will be text of Scene 1.</text>
+		<sceneHeadline>Headline of Scene 1</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 2</westButtonText>
 		<westButtonSceneIndex>2</westButtonSceneIndex>
 		<centerButtonText>To Scene 3</centerButtonText>
@@ -22,7 +24,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>2</sceneIndex>
-		<text>There will be text of Scene 2.</text>
+		<sceneHeadline>Headline of Scene 2</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 3</westButtonText>
 		<westButtonSceneIndex>3</westButtonSceneIndex>
 		<centerButtonText>To Scene 4</centerButtonText>
@@ -32,7 +35,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>3</sceneIndex>
-		<text>There will be text of Scene 3.</text>
+		<sceneHeadline>Headline of Scene 3</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 4</westButtonText>
 		<westButtonSceneIndex>4</westButtonSceneIndex>
 		<centerButtonText>To Scene 5</centerButtonText>
@@ -42,7 +46,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>4</sceneIndex>
-		<text>There will be text of Scene 4.</text>
+		<sceneHeadline>Headline of Scene 4</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 5</westButtonText>
 		<westButtonSceneIndex>5</westButtonSceneIndex>
 		<centerButtonText>To Scene 6</centerButtonText>
@@ -52,7 +57,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>5</sceneIndex>
-		<text>There will be text of Scene 5.</text>
+		<sceneHeadline>Headline of Scene 5</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 6</westButtonText>
 		<westButtonSceneIndex>6</westButtonSceneIndex>
 		<centerButtonText>To Scene 7</centerButtonText>
@@ -62,7 +68,8 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>6</sceneIndex>
-		<text>There will be text of Scene 6.</text>
+		<sceneHeadline>Headline of Scene 6</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 7</westButtonText>
 		<westButtonSceneIndex>7</westButtonSceneIndex>
 		<centerButtonText>To Scene 8</centerButtonText>
@@ -72,32 +79,80 @@
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>7</sceneIndex>
-		<text>There will be text of Scene 7.</text>
+		<sceneHeadline>Headline of Scene 7</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 8</westButtonText>
 		<westButtonSceneIndex>8</westButtonSceneIndex>
 		<centerButtonText>To Scene 9</centerButtonText>
 		<centerButtonSceneIndex>9</centerButtonSceneIndex>
-		<eastButtonText>To Scene 0</eastButtonText>
-		<eastButtonSceneIndex>0</eastButtonSceneIndex>
+		<eastButtonText>To Scene 10</eastButtonText>
+		<eastButtonSceneIndex>10</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>8</sceneIndex>
-		<text>There will be text of Scene 8.</text>
+		<sceneHeadline>Headline of Scene 8</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
 		<westButtonText>To Scene 9</westButtonText>
 		<westButtonSceneIndex>9</westButtonSceneIndex>
-		<centerButtonText>To Scene 0</centerButtonText>
-		<centerButtonSceneIndex>0</centerButtonSceneIndex>
-		<eastButtonText>To Scene 1</eastButtonText>
-		<eastButtonSceneIndex>1</eastButtonSceneIndex>
+		<centerButtonText>To Scene 10</centerButtonText>
+		<centerButtonSceneIndex>10</centerButtonSceneIndex>
+		<eastButtonText>To Scene 11</eastButtonText>
+		<eastButtonSceneIndex>11</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>9</sceneIndex>
-		<text>There will be text of Scene 9.</text>
-		<westButtonText>To Scene 0</westButtonText>
-		<westButtonSceneIndex>0</westButtonSceneIndex>
-		<centerButtonText>To Scene 1</centerButtonText>
-		<centerButtonSceneIndex>1</centerButtonSceneIndex>
+		<sceneHeadline>Headline of Scene 9</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
+		<westButtonText>To Scene 10</westButtonText>
+		<westButtonSceneIndex>10</westButtonSceneIndex>
+		<centerButtonText>To Scene 11</centerButtonText>
+		<centerButtonSceneIndex>11</centerButtonSceneIndex>
 		<eastButtonText>To Scene 12</eastButtonText>
 		<eastButtonSceneIndex>12</eastButtonSceneIndex>
 	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>10</sceneIndex>
+		<sceneHeadline>Headline of Scene 10</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
+		<westButtonText>To Scene 11</westButtonText>
+		<westButtonSceneIndex>11</westButtonSceneIndex>
+		<centerButtonText>To Scene 12</centerButtonText>
+		<centerButtonSceneIndex>12</centerButtonSceneIndex>
+		<eastButtonText>To Scene 13</eastButtonText>
+		<eastButtonSceneIndex>13</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>11</sceneIndex>
+		<sceneHeadline>Headline of Scene 11</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
+		<westButtonText>To Scene 12</westButtonText>
+		<westButtonSceneIndex>12</westButtonSceneIndex>
+		<centerButtonText>To Scene 13</centerButtonText>
+		<centerButtonSceneIndex>13</centerButtonSceneIndex>
+		<eastButtonText>To Scene 14</eastButtonText>
+		<eastButtonSceneIndex>14</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>12</sceneIndex>
+		<sceneHeadline>Headline of Scene 12</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
+		<westButtonText>To Scene 13</westButtonText>
+		<westButtonSceneIndex>13</westButtonSceneIndex>
+		<centerButtonText>To Scene 14</centerButtonText>
+		<centerButtonSceneIndex>14</centerButtonSceneIndex>
+		<eastButtonText>To Scene 15</eastButtonText>
+		<eastButtonSceneIndex>15</eastButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>13</sceneIndex>
+		<sceneHeadline>Headline of Scene 13</sceneHeadline>
+		<sceneText>Text of the Scene</sceneText>
+		<westButtonText>To Scene 14</westButtonText>
+		<westButtonSceneIndex>14</westButtonSceneIndex>
+		<centerButtonText>To Scene 15</centerButtonText>
+		<centerButtonSceneIndex>15</centerButtonSceneIndex>
+		<eastButtonText>To Scene 16</eastButtonText>
+		<eastButtonSceneIndex>16</eastButtonSceneIndex>
+	</sceneConfig>
+
 </sceneConfigContainer>

@@ -7,7 +7,8 @@ import javax.xml.bind.annotation.XmlAccessorType;
 public class SceneConfig {
 
 	private int sceneIndex;
-	private String text;
+	private String sceneHeadline;
+	private String sceneText;
 	private String westButtonText;
 	private int westButtonSceneIndex;
 	private String centerButtonText;
@@ -19,10 +20,11 @@ public class SceneConfig {
 		//Unused no-arg constructor required by JAXB.
 	}
 
-	public SceneConfig(int panelIndex, String text, String westButtonText, int westButtonSceneIndex,
+	public SceneConfig(int sceneIndex, String sceneHeadline, String sceneText, String westButtonText, int westButtonSceneIndex,
 			String centerButtonText, int centerButtonSceneIndex, String eastButtonText, int eastButtonSceneIndex) {
-		this.sceneIndex = panelIndex;
-		this.text = text;
+		this.sceneIndex = sceneIndex;
+		this.sceneHeadline = sceneHeadline;
+		this.sceneText = sceneText;
 		this.westButtonText = westButtonText;
 		this.westButtonSceneIndex = westButtonSceneIndex;
 		this.centerButtonText = centerButtonText;
@@ -35,8 +37,8 @@ public class SceneConfig {
 		return sceneIndex;
 	}
 
-	public String getText() {
-		return text;
+	public String getSceneText() {
+		return sceneText;
 	}
 
 	public String getWestButtonText() {
@@ -61,6 +63,14 @@ public class SceneConfig {
 
 	public int getEastButtonSceneIndex() {
 		return eastButtonSceneIndex;
+	}
+
+	public String getSceneHeadline() {
+		return sceneHeadline;
+	}
+
+	public void setSceneHeadline(String sceneHeadline) {
+		this.sceneHeadline = sceneHeadline;
 	}
 
 }

@@ -24,7 +24,7 @@ public class SceneConfigFactory {
 			Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
 			configContainer = (SceneConfigContainer) jaxbUnmarshaller
-					.unmarshal(new File("./resources/sceneConfig.xml"));
+					.unmarshal(new File(MainConfig.SCENE_CONFIG_FILE_PATH));
 		} catch (JAXBException e) {
 			LOGGER.error("Configuration could not be read. Exiting...", e);
 			System.exit(1);

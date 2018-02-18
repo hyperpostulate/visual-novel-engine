@@ -6,7 +6,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.mesutormanli.visualNovelEngine.config.MainFrameConfig;
+import org.mesutormanli.visualNovelEngine.config.MainConfig;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame{
@@ -17,22 +17,22 @@ public class MainFrame extends JFrame{
 	private MainFrame() {
 	
 		LOGGER.info("MainFrame invoked.");
-		setTitle(MainFrameConfig.TITLE);
-		setSize(MainFrameConfig.DIMENSION);
+		setTitle(MainConfig.TITLE);
+		setSize(MainConfig.MAIN_FRAME_DIMENSION);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setResizable(false);
+		setResizable(true);
 		
-        JMenuBar bar = new JMenuBar();
-        setJMenuBar(bar);
-        
-        JMenu fileMenu=new JMenu("About");
-        fileMenu.setMnemonic('A');
-        bar.add(fileMenu);
-
-        JMenu fileMenu2=new JMenu("License");
-        fileMenu2.setMnemonic('L');
-        bar.add(fileMenu2);
+//        JMenuBar bar = new JMenuBar();
+//        setJMenuBar(bar);
+//        
+//        JMenu fileMenu=new JMenu("About");
+//        fileMenu.setMnemonic('A');
+//        bar.add(fileMenu);
+//
+//        JMenu fileMenu2=new JMenu("License");
+//        fileMenu2.setMnemonic('L');
+//        bar.add(fileMenu2);
 
 	}
 	
