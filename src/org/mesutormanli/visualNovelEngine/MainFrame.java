@@ -19,7 +19,7 @@ public class MainFrame extends JFrame{
 		setSize(MainConfig.MAIN_FRAME_DIMENSION);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
-		setResizable(true);
+		setResizable(false);
 		setUndecorated(true);
 		
 //        JMenuBar bar = new JMenuBar();

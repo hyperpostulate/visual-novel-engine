@@ -86,7 +86,7 @@
 	<sceneConfig>
 		<sceneIndex>8</sceneIndex>
 		<sceneHeadline>Outside</sceneHeadline>
-		<sceneText>You go outside. There is a disgusting smell because of the corpses. You feel like vomitting. Then, you pass through the sea of the corpses, and you reach the city center. You see a destroyed and half-eaten corpse of a parachuter at the top of monument.Looking at the zombie corpses around him, you think that he resisted the attack of the zombies well, even though it was not enough for him. 'He must have been a hard soldier in his life' you say. The zombie corpses around the man proove that. There are two buildings that are not in ruins: the Sport Hall and the Cultural Center.</sceneText>
+		<sceneText>You go outside. There is a disgusting smell because of the corpses. You feel like vomitting. Then, you pass through the sea of the corpses, and you reach the city center. You see a destroyed and half-eaten corpse of a parachuter at the top of monument. Looking at the zombie corpses around him, you think that he resisted the attack of the zombies well, even though it was not enough for him. 'He must have been a hard soldier in his life' you say. The zombie corpses around the man proove that. There are two buildings that are not in ruins: the Sport Hall and the Cultural Center.</sceneText>
 		<westButtonText>Go to the Cultural Center</westButtonText>
 		<westButtonSceneIndex>9</westButtonSceneIndex>
 		<centerButtonText>Go to the Sport Hall</centerButtonText>
@@ -95,7 +95,7 @@
 	<sceneConfig>
 		<sceneIndex>9</sceneIndex>
 		<sceneHeadline>Cultural Center</sceneHeadline>
-		<sceneText>Cultural Center is a place surrounded fully by the zombie corpses. Apparently, it has been defended bravely. Yet it's forsaken now. When you pass the corridors, you miss the old days when people enjoyed the art. Everything was changed so suddenly. Two months ago, you listened to a recital of your favorite musician there.You feel like it has been ages. There is a backdoor and a basement in the building. Also, there is an amphitheatre outside.</sceneText>
+		<sceneText>Cultural Center is a place surrounded fully by the zombie corpses. Apparently, it has been defended bravely. Yet it's forsaken now. When you pass the corridors, you miss the old days when people enjoyed the art. Everything was changed so suddenly. Two months ago, you listened to a recital of your favorite musician there. You feel like it has been ages. There is a backdoor and a basement in the building. Also, there is an amphitheatre outside.</sceneText>
 		<westButtonText>Go outside from backdoor</westButtonText>
 		<westButtonSceneIndex>11</westButtonSceneIndex>
 		<centerButtonText>Go to the underground depot</centerButtonText>
