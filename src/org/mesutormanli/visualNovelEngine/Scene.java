@@ -72,7 +72,7 @@ public class Scene extends JPanel {
 		add(getImagePanel(), new Float(60));
 		add(getButtonPanel(), new Float(10));
 
-		new MP3Player(new File("./resources/sounds/ambient.mp3")).play();
+		// new MP3Player(new File("./resources/sounds/ambient.mp3")).play();
 
 	}
 
