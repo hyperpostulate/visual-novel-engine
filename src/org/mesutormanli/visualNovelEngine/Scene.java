@@ -1,23 +1,21 @@
 package org.mesutormanli.visualNovelEngine;
 
-import java.awt.BorderLayout;
-import java.awt.Color;
 import java.io.File;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import javax.swing.JTextPane;
+
 import javax.swing.border.TitledBorder;
 
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
 import org.mesutormanli.visualNovelEngine.config.SceneConfig;
 import org.mesutormanli.visualNovelEngine.config.SceneConfigFactory;
-import org.mesutormanli.visualNovelEngine.util.RelativeLayout;
+
 import org.mesutormanli.visualNovelEngine.util.StringUtils;
+
+import jaco.mp3.player.MP3Player;
 
 @SuppressWarnings("serial")
 public class Scene extends JPanel {
@@ -46,34 +44,35 @@ public class Scene extends JPanel {
 
 		// Image Panel
 		setImagePanel(new JPanel(MainConfig.IMAGE_PANEL_LAYOUT));
-		getImagePanel().add(new JLabel(new ImageIcon("./resources/images/" + MainConfig.IMAGE_FILE_PREFIX
-				+ getSceneConfig().getSceneIndex() + MainConfig.IMAGE_FILE_POSTFIX)));
+		getImagePanel().add(new JLabel(new ImageIcon("./resources/images/" + getSceneConfig().getSceneHeadline() + MainConfig.IMAGE_FILE_POSTFIX)));
 
 		// Button Panel
 		setButtonPanel(new JPanel(MainConfig.BUTTON_PANEL_LAYOUT));
 
-		if(StringUtils.isNotEmpty(getSceneConfig().getWestButtonText())) {
-		JButton westButton = new JButton(getSceneConfig().getWestButtonText());
-		westButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getWestButtonSceneIndex()));
-		getButtonPanel().add(westButton);
+		if (StringUtils.isNotEmpty(getSceneConfig().getWestButtonText())) {
+			JButton westButton = new JButton(getSceneConfig().getWestButtonText());
+			westButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getWestButtonSceneIndex()));
+			getButtonPanel().add(westButton);
 		}
 
-		if(StringUtils.isNotEmpty(getSceneConfig().getCenterButtonText())) {
-		JButton centerButton = new JButton(getSceneConfig().getCenterButtonText());
-		centerButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getCenterButtonSceneIndex()));
-		getButtonPanel().add(centerButton);
+		if (StringUtils.isNotEmpty(getSceneConfig().getCenterButtonText())) {
+			JButton centerButton = new JButton(getSceneConfig().getCenterButtonText());
+			centerButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getCenterButtonSceneIndex()));
+			getButtonPanel().add(centerButton);
 		}
 
-		if(StringUtils.isNotEmpty(getSceneConfig().getEastButtonText())) {
-		JButton eastButton = new JButton(getSceneConfig().getEastButtonText());
-		eastButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getEastButtonSceneIndex()));
-		getButtonPanel().add(eastButton);
+		if (StringUtils.isNotEmpty(getSceneConfig().getEastButtonText())) {
+			JButton eastButton = new JButton(getSceneConfig().getEastButtonText());
+			eastButton.addActionListener(new SceneButtonActionListener(getSceneConfig().getEastButtonSceneIndex()));
+			getButtonPanel().add(eastButton);
 		}
 
 		// Add subpanels to GamePanel
-		add(getTextPanel(), new Float(20));
-		add(getImagePanel(), new Float(70));
+		add(getTextPanel(), new Float(30));
+		add(getImagePanel(), new Float(60));
 		add(getButtonPanel(), new Float(10));
+
+		new MP3Player(new File("./resources/sounds/ambient.mp3")).play();
 
 	}
 

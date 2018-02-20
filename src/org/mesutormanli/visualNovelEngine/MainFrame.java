@@ -2,8 +2,6 @@ package org.mesutormanli.visualNovelEngine;
 
 
 import javax.swing.JFrame;
-import javax.swing.JMenu;
-import javax.swing.JMenuBar;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
@@ -22,6 +20,7 @@ public class MainFrame extends JFrame{
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setResizable(true);
+		setUndecorated(true);
 		
 //        JMenuBar bar = new JMenuBar();
 //        setJMenuBar(bar);

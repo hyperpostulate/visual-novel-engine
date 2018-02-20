@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sceneConfigContainer>
 	<sceneConfig>
+			<sceneHeadline>Zombie Apocalypse</sceneHeadline>
 		<sceneIndex>0</sceneIndex>
-		<sceneHeadline>Start</sceneHeadline>
+		<sceneText>Everything started with an accident... In one of the most-developed countries, at a laboratory controlled by the dark side of the government, a biological weapon research was in progress. This research supported the DNA manipulation ability of viruses. Two types of viruses have been produced. One of these viruses was designed to be used on the soldiers in order to increase their physical abilities, while the other was designed to be used on the enemies to decrease neural activities and destroy their intelligence. But one day, an unexpected accident happened... Two types of viruses leaked from test tubes and contaminated the laboratory's ventilation system. Two viruses co-evolved each other and infected many innocent people, and infected people started turning into zombies! In spite of all the efforts and precautions, all civilization of the mankind has been destroyed after contamination over the whole world. There was NO GOVERNMENT, NO SAFE TERRITORY and NO HELP anymore... 96% of human population  died or turned into zombies. Only 1% had natural immunity to the virus. You are lucky,if you are immune. Unfortunately, immunity doesn't mean immortality. In this new POST-APOCALYPTIC world order, how much time could you survive?</sceneText>
+				<centerButtonText>Begin</centerButtonText>
+		<centerButtonSceneIndex>1</centerButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>1</sceneIndex>
+		<sceneHeadline>Wake Up</sceneHeadline>
 		<sceneText>You wake up with a headache... You hear an old Iron Maiden song:
 			#...To this day I guess I'll never know
 			Just why they let me go
@@ -10,165 +17,139 @@
 			'Till I dance with death... #
 			You turn off the tape, and start to find food and ammunition for your rifle...
 		</sceneText>
-		<westButtonText>To Scene 1</westButtonText>
-		<westButtonSceneIndex>1</westButtonSceneIndex>
-		<centerButtonText>To Scene 2</centerButtonText>
-		<centerButtonSceneIndex>2</centerButtonSceneIndex>
-		<eastButtonText>To Scene 3</eastButtonText>
-		<eastButtonSceneIndex>3</eastButtonSceneIndex>
-	</sceneConfig>
-	<sceneConfig>
-		<sceneIndex>1</sceneIndex>
-		<sceneHeadline>Search</sceneHeadline>
-		<sceneText>After 10 minutes of search, you realize a crater that is left from the early on bombardments. Suddenly, something pushes you into the crater. Your leg is broken and all your weapons are out of your reach. You are left with nothing but your Swiss Army Knife in your pocket. You hear hummings all around... They come closer and closer... 'I wish I was a zombie.' is all what comes out of your mouth, when all the zombies making those noises come at you.
-		</sceneText>
-		<westButtonText>To Scene 2</westButtonText>
-		<westButtonSceneIndex>2</westButtonSceneIndex>
-		<centerButtonText>To Scene 3</centerButtonText>
-		<centerButtonSceneIndex>3</centerButtonSceneIndex>
-		<eastButtonText>To Scene 4</eastButtonText>
-		<eastButtonSceneIndex>4</eastButtonSceneIndex>
+		<westButtonText>Go to Market</westButtonText>
+		<westButtonSceneIndex>3</westButtonSceneIndex>
+		<centerButtonText>Go to Police Station</centerButtonText>
+		<centerButtonSceneIndex>4</centerButtonSceneIndex>
+		<eastButtonText>Search Streets</eastButtonText>
+		<eastButtonSceneIndex>2</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>2</sceneIndex>
-		<sceneHeadline>Market</sceneHeadline>
-		<sceneText>You go to the market. Even if you have to kill a couple of zombies on the way, your rifle and a fireaxe that you found in the ruins don't let you down. After you make sure that you have canned food in your bag that will last for a couple of days, it suddenly crosses to your mind that the market could possibly have a depository. Then you find a library card on the ground, you think some people might have hidden in the library and survived. Also you realize that your ammunition is in decline.</sceneText>
-		<westButtonText>To Scene 3</westButtonText>
-		<westButtonSceneIndex>3</westButtonSceneIndex>
-		<centerButtonText>To Scene 4</centerButtonText>
-		<centerButtonSceneIndex>4</centerButtonSceneIndex>
-		<eastButtonText>To Scene 5</eastButtonText>
-		<eastButtonSceneIndex>5</eastButtonSceneIndex>
+		<sceneHeadline>Search the Streets</sceneHeadline>
+		<sceneText>After 10 minutes of search, you realize a crater that is left from the early on bombardments. Suddenly, something pushes you into the crater. Your leg is broken and all your weapons are out of your reach. You are left with nothing but your Swiss Army Knife in your pocket. You hear hummings all around... They come closer and closer... 'I wish I was a zombie.' is all what comes out of your mouth, when all the zombies making those noises come at you.
+		</sceneText>
+		<centerButtonText>Rest in peace...</centerButtonText>
+		<centerButtonSceneIndex>-1</centerButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>3</sceneIndex>
-		<sceneHeadline>Police Station</sceneHeadline>
-		<sceneText>You go to the police station. There are many things that remind you of the days before the epidemic. A happy family picture, a birthday cake (half-eaten), a pack of cigars (very premium quality). However, those civilized days are over now. Nowadays there is just one valid virtue: TO SURVIVE... You go down into the armory, then you take lots of 5.56 mm bullets along with some grenades and put them into a somewhat large bag.</sceneText>
-		<westButtonText>To Scene 4</westButtonText>
-		<westButtonSceneIndex>4</westButtonSceneIndex>
-		<centerButtonText>To Scene 5</centerButtonText>
-		<centerButtonSceneIndex>5</centerButtonSceneIndex>
-		<eastButtonText>To Scene 6</eastButtonText>
-		<eastButtonSceneIndex>6</eastButtonSceneIndex>
+		<sceneHeadline>Market</sceneHeadline>
+		<sceneText>You go to the market. Even if you have to kill a couple of zombies on the way, your rifle and a fireaxe that you found in the ruins don't let you down. After you make sure that you have canned food in your bag that will last for a couple of days, it suddenly crosses to your mind that the market could possibly have a depository. Then you find a library card on the ground, you think some people might have hidden in the library and survived. Also you realize that your ammunition is in decline.</sceneText>
+		<westButtonText>Check the storeroom of market</westButtonText>
+		<westButtonSceneIndex>6</westButtonSceneIndex>
+		<centerButtonText>Check the Police Office</centerButtonText>
+		<centerButtonSceneIndex>4</centerButtonSceneIndex>
+		<eastButtonText>Check the Library</eastButtonText>
+		<eastButtonSceneIndex>5</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>4</sceneIndex>
-		<sceneHeadline>The Library</sceneHeadline>
-		<sceneText>The library looks like a ruin. Scattared books on the ground and many human corpses at the corridors. 'Fortunately these corpses don't walk.' you say. But nobody laughes at your joke. There is nothing useful here, but there could be in the other parts of the building...</sceneText>
-		<westButtonText>To Scene 5</westButtonText>
-		<westButtonSceneIndex>5</westButtonSceneIndex>
-		<centerButtonText>To Scene 6</centerButtonText>
-		<centerButtonSceneIndex>6</centerButtonSceneIndex>
-		<eastButtonText>To Scene 7</eastButtonText>
-		<eastButtonSceneIndex>7</eastButtonSceneIndex>
+		<sceneHeadline>Police Station</sceneHeadline>
+		<sceneText>You go to the police station. There are many things that remind you of the days before the epidemic. A happy family picture, a birthday cake (half-eaten), a pack of cigars (very premium quality). However, those civilized days are over now. Nowadays there is just one valid virtue: TO SURVIVE... You go down into the armory, then you take lots of 5.56 mm bullets along with some grenades and put them into a somewhat large bag.</sceneText>
+		<westButtonText>Go to the holding cell, at downstairs</westButtonText>
+		<westButtonSceneIndex>6</westButtonSceneIndex>
+		<centerButtonText>Go to the Roof</centerButtonText>
+		<centerButtonSceneIndex>7</centerButtonSceneIndex>
+		<eastButtonText>Get out of here</eastButtonText>
+		<eastButtonSceneIndex>8</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>5</sceneIndex>
-		<sceneHeadline>Lower Floor</sceneHeadline>
-		<sceneText>The lower floor is full of zombies. You immediately hold onto your rifle and although you manage to stick the brain of some of them all on the wall, it does not take you too long to realize that in narrow areas like this corridor the rifle isn't so efficient. Then you hold up your axe, but it's too late... The last idea in your mind is of the happy family you were at your elementary school graduation...</sceneText>
-		<westButtonText>To Scene 6</westButtonText>
-		<westButtonSceneIndex>6</westButtonSceneIndex>
-		<centerButtonText>To Scene 7</centerButtonText>
-		<centerButtonSceneIndex>7</centerButtonSceneIndex>
-		<eastButtonText>To Scene 8</eastButtonText>
+		<sceneHeadline>Library</sceneHeadline>
+		<sceneText>The library looks like a ruin. Scattared books on the ground and many human corpses at the corridors. 'Fortunately these corpses don't walk.' you say. But nobody laughes at your joke. There is nothing useful here, but there could be in the other parts of the building...</sceneText>
+		<westButtonText>Go to the Roof</westButtonText>
+		<westButtonSceneIndex>7</westButtonSceneIndex>
+		<centerButtonText>Go to the Downstairs ,Archieve Room</centerButtonText>
+		<centerButtonSceneIndex>6</centerButtonSceneIndex>
+		<eastButtonText>Get out the Library</eastButtonText>
 		<eastButtonSceneIndex>8</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>6</sceneIndex>
-		<sceneHeadline>Roof</sceneHeadline>
-		<sceneText>You get to the roof. Looking at the ruins of the city from the scope of your rifle, you finish some of the zombies off. When you look through the horizon, something attracts your attention. A group of survivors fight against the zombies in ruins, and they win. By the way, you recognize only two big buildings that aren't in ruins: Sports' Complex and Cultural Center. Maybe there are some survivors in them.</sceneText>
-		<westButtonText>To Scene 7</westButtonText>
-		<westButtonSceneIndex>7</westButtonSceneIndex>
-		<centerButtonText>To Scene 8</centerButtonText>
-		<centerButtonSceneIndex>8</centerButtonSceneIndex>
-		<eastButtonText>To Scene 9</eastButtonText>
-		<eastButtonSceneIndex>9</eastButtonSceneIndex>
+		<sceneHeadline>Lower Floor</sceneHeadline>
+		<sceneText>The lower floor is full of zombies. You immediately hold onto your rifle and although you manage to stick the brain of some of them all on the wall, it does not take you too long to realize that in narrow areas like this corridor the rifle isn't so efficient. Then you hold up your axe, but it's too late... The last idea in your mind is of the happy family you were at your elementary school graduation...</sceneText>
+		<centerButtonText>Rest in peace...</centerButtonText>
+		<centerButtonSceneIndex>-1</centerButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>7</sceneIndex>
-		<sceneHeadline>Outside</sceneHeadline>
-		<sceneText>You go outside. There is a disgusting smell because of the
-			corpses. You feel like vomitting. Then, you pass through the sea of
-			the corpses, and you reach the city center. You see a destroyed and
-			half-eaten corpse of a parachuter at the top of monument.Looking at
-			the zombie corpses around him, you think that he resisted the attack
-			of the zombies well, even though it was not enough for him. 'He must
-			have been a hard soldier in his life' you say. The zombie corpses
-			around the man proove that. There are two buildings that are not in
-			ruins: the Sport Hall and the Cultural Center.</sceneText>
-		<westButtonText>To Scene 8</westButtonText>
-		<westButtonSceneIndex>8</westButtonSceneIndex>
-		<centerButtonText>To Scene 9</centerButtonText>
-		<centerButtonSceneIndex>9</centerButtonSceneIndex>
-		<eastButtonText>To Scene 10</eastButtonText>
-		<eastButtonSceneIndex>10</eastButtonSceneIndex>
+		<sceneHeadline>Roof</sceneHeadline>
+		<sceneText>You get to the roof. Looking at the ruins of the city from the scope of your rifle, you finish some of the zombies off. When you look through the horizon, something attracts your attention. A group of survivors fight against the zombies in ruins, and they win. By the way, you recognize only two big buildings that aren't in ruins: Sports' Complex and Cultural Center. Maybe there are some survivors in them.</sceneText>
+		<westButtonText>Go to the Cultural Center</westButtonText>
+		<westButtonSceneIndex>9</westButtonSceneIndex>
+		<centerButtonText>Go to the Sport Hall</centerButtonText>
+		<centerButtonSceneIndex>10</centerButtonSceneIndex>
+		<eastButtonText>Go to the near of people at ruins</eastButtonText>
+		<eastButtonSceneIndex>14</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>8</sceneIndex>
-		<sceneHeadline>Cultural Center</sceneHeadline>
-		<sceneText>Cultural Center is a place surrounded fully by the zombie corpses. Apparently, it has been defended bravely. Yet it's forsaken now. When you pass the corridors, you miss the old days when people enjoyed the art. Everything was changed so suddenly. Two months ago, you listened to a recital of your favorite musician there.You feel like it has been ages. There is a backdoor and a basement in the building. Also, there is an amphitheatre outside.</sceneText>
-		<westButtonText>To Scene 9</westButtonText>
+		<sceneHeadline>Outside</sceneHeadline>
+		<sceneText>You go outside. There is a disgusting smell because of the corpses. You feel like vomitting. Then, you pass through the sea of the corpses, and you reach the city center. You see a destroyed and half-eaten corpse of a parachuter at the top of monument.Looking at the zombie corpses around him, you think that he resisted the attack of the zombies well, even though it was not enough for him. 'He must have been a hard soldier in his life' you say. The zombie corpses around the man proove that. There are two buildings that are not in ruins: the Sport Hall and the Cultural Center.</sceneText>
+		<westButtonText>Go to the Cultural Center</westButtonText>
 		<westButtonSceneIndex>9</westButtonSceneIndex>
-		<centerButtonText>To Scene 10</centerButtonText>
+		<centerButtonText>Go to the Sport Hall</centerButtonText>
 		<centerButtonSceneIndex>10</centerButtonSceneIndex>
-		<eastButtonText>To Scene 11</eastButtonText>
-		<eastButtonSceneIndex>11</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>9</sceneIndex>
-		<sceneHeadline>Sport Hall</sceneHeadline>
-		<sceneText>You come across a few of the survivors at the Sport Hall. They help you with food and ammunition. The people that have nothing in common are all together here, all struggling to survive. An old, wise looked man among them gives you an advice: 'Survive, young man, nowadays this is very hard for us.</sceneText>
-		<westButtonText>To Scene 10</westButtonText>
-		<westButtonSceneIndex>10</westButtonSceneIndex>
-		<centerButtonText>To Scene 11</centerButtonText>
-		<centerButtonSceneIndex>11</centerButtonSceneIndex>
-		<eastButtonText>To Scene 12</eastButtonText>
-		<eastButtonSceneIndex>12</eastButtonSceneIndex>
+		<sceneHeadline>Cultural Center</sceneHeadline>
+		<sceneText>Cultural Center is a place surrounded fully by the zombie corpses. Apparently, it has been defended bravely. Yet it's forsaken now. When you pass the corridors, you miss the old days when people enjoyed the art. Everything was changed so suddenly. Two months ago, you listened to a recital of your favorite musician there.You feel like it has been ages. There is a backdoor and a basement in the building. Also, there is an amphitheatre outside.</sceneText>
+		<westButtonText>Go outside from backdoor</westButtonText>
+		<westButtonSceneIndex>11</westButtonSceneIndex>
+		<centerButtonText>Go to the underground depot</centerButtonText>
+		<centerButtonSceneIndex>6</centerButtonSceneIndex>
+		<eastButtonText>Search the amphitheatre</eastButtonText>
+		<eastButtonSceneIndex>2</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>10</sceneIndex>
-		<sceneHeadline>Outside</sceneHeadline>
-		<sceneText>You go outside. In one of the buildings, you find the note that explains that there are some survivors at the Sports' Complex. After more research, you find an old radio. Broadcast saying that: 'The last call for non-infected survivors! Three days later, all of the city will be erased from the map by nuclear weapons. All survivors who want to live, must reach the rescue point which is in the south of city hall.'</sceneText>
-		<westButtonText>To Scene 11</westButtonText>
-		<westButtonSceneIndex>11</westButtonSceneIndex>
-		<centerButtonText>To Scene 12</centerButtonText>
-		<centerButtonSceneIndex>12</centerButtonSceneIndex>
-		<eastButtonText>To Scene 13</eastButtonText>
-		<eastButtonSceneIndex>13</eastButtonSceneIndex>
+		<sceneHeadline>Sport Hall</sceneHeadline>
+		<sceneText>You come across a few of the survivors at the Sport Hall. They help you with food and ammunition. The people that have nothing in common are all together here, all struggling to survive. An old, wise looked man among them gives you an advice: 'Survive, young man, nowadays this is very hard for us.</sceneText>
+		<westButtonText>Stay With People</westButtonText>
+		<westButtonSceneIndex>12</westButtonSceneIndex>
+		<centerButtonText>Go to the Cultural Center</centerButtonText>
+		<centerButtonSceneIndex>9</centerButtonSceneIndex>
+		<eastButtonText>Search the Streets</eastButtonText>
+		<eastButtonSceneIndex>2</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>11</sceneIndex>
-		<sceneHeadline>For the People, by the People</sceneHeadline>
-		<sceneText>You stay with the people. It's very hard to get adapted to this new life. Life now goes in shifts. In the mornings, the people immune to the virus, loot the abandoned markets. In the nights, the other people repair the barricades. In a loot party, you suddenly see a sparkle while observing the horizon from a market's roof. THIS IS A HELICOPTER! Maybe the last hope for you and the people with you. However,you can double the good news after searching the market's depository..</sceneText>
-		<westButtonText>To Scene 12</westButtonText>
+		<sceneHeadline>Survivors... Maybe...</sceneHeadline>
+		<sceneText>You go outside. In one of the buildings, you find the note that explains that there are some survivors at the Sports' Complex. After more research, you find an old radio. Broadcast saying that: 'The last call for non-infected survivors! Three days later, all of the city will be erased from the map by nuclear weapons. All survivors who want to live, must reach the rescue point which is in the south of city hall.'</sceneText>
+		<westButtonText>Inform the people at the Sport Hall</westButtonText>
 		<westButtonSceneIndex>12</westButtonSceneIndex>
-		<centerButtonText>To Scene 13</centerButtonText>
+		<centerButtonText>Go alone to the Rescue Area</centerButtonText>
 		<centerButtonSceneIndex>13</centerButtonSceneIndex>
-		<eastButtonText>To Scene 14</eastButtonText>
+		<eastButtonText>Continue to search</eastButtonText>
 		<eastButtonSceneIndex>14</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>12</sceneIndex>
-		<sceneHeadline>Selfish</sceneHeadline>
-		<sceneText>Even though you feel remorseful for your selfishly taken decision, you don't care much. 'I took your advice, old man.', you think. When you reach the rescue zone, you see that the helicopter has been destroyed. After an intensive zombie attack, too many well-armored soldiers turned into zombies. You have no chance anymore, you will pay the price of your selfhishness, with your life.
-		</sceneText>
-		<westButtonText>To Scene 13</westButtonText>
-		<westButtonSceneIndex>13</westButtonSceneIndex>
-		<centerButtonText>To Scene 14</centerButtonText>
+		<sceneHeadline>Strong from Unity</sceneHeadline>
+		<sceneText>You stay with the people. It's very hard to get adapted to this new life. Life now goes in shifts. In the mornings, the people immune to the virus, loot the abandoned markets. In the nights, the other people repair the barricades. In a loot party, you suddenly see a sparkle while observing the horizon from a market's roof. THIS IS A HELICOPTER! Maybe the last hope for you and the people with you. However,you can double the good news after searching the market's depository..</sceneText>
+		<westButtonText>Inform the People</westButtonText>
+		<westButtonSceneIndex>14</westButtonSceneIndex>
+		<centerButtonText>Search the Depot</centerButtonText>
 		<centerButtonSceneIndex>14</centerButtonSceneIndex>
-		<eastButtonText>To Scene 15</eastButtonText>
-		<eastButtonSceneIndex>15</eastButtonSceneIndex>
+		<eastButtonText>Go alone to the Helicopter</eastButtonText>
+		<eastButtonSceneIndex>13</eastButtonSceneIndex>
 	</sceneConfig>
 	<sceneConfig>
 		<sceneIndex>13</sceneIndex>
+		<sceneHeadline>Selfish Bastard</sceneHeadline>
+		<sceneText>Even though you feel remorseful for your selfishly taken decision, you don't care much. 'I took your advice, old man.', you think. When you reach the rescue zone, you see that the helicopter has been destroyed. After an intensive zombie attack, too many well-armored soldiers turned into zombies. You have no chance anymore, you will pay the price of your selfhishness, with your life.
+		</sceneText>
+		<centerButtonText>Rest in peace...</centerButtonText>
+		<centerButtonSceneIndex>-1</centerButtonSceneIndex>
+	</sceneConfig>
+	<sceneConfig>
+		<sceneIndex>14</sceneIndex>
 		<sceneHeadline>Rescue</sceneHeadline>
 		<sceneText>People say that they heard the broadcast announce, and they have to leave this city in three days. You get on the road all together. You're on the front line, because you're immune. Your voyage is very hard, but you reach the rescue zone. While you go to one of the non-infected zones, you think that life is still worth living.</sceneText>
-		<westButtonText>To Scene 14</westButtonText>
-		<westButtonSceneIndex>14</westButtonSceneIndex>
-		<centerButtonText>To Scene 15</centerButtonText>
-		<centerButtonSceneIndex>15</centerButtonSceneIndex>
-		<eastButtonText>To Scene 16</eastButtonText>
-		<eastButtonSceneIndex>16</eastButtonSceneIndex>
+		<centerButtonText>You have rescued...</centerButtonText>
+		<centerButtonSceneIndex>-1</centerButtonSceneIndex>
 	</sceneConfig>
 
 </sceneConfigContainer>
