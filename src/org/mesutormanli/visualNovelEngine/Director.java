@@ -3,7 +3,6 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.EventQueue;
 
 import javax.swing.UIManager;
-import javax.swing.plaf.nimbus.NimbusLookAndFeel;
 
 import org.pushingpixels.substance.api.skin.SubstanceRavenLookAndFeel;
 import org.slf4j.Logger;
