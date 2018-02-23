@@ -45,7 +45,7 @@ public class Scene extends JPanel {
 		// Image Panel
 		setImagePanel(new JPanel(MainConfig.IMAGE_PANEL_LAYOUT));
 		getImagePanel().add(new JLabel(new ImageIcon(
-				"./resources/images/" + getSceneConfig().getSceneHeadline() + MainConfig.IMAGE_FILE_POSTFIX)));
+				MainConfig.SCENE_IMAGES_DIR_PATH + getSceneConfig().getSceneHeadline() + MainConfig.IMAGE_FILE_POSTFIX)));
 
 		// Button Panel
 		setButtonPanel(new JPanel(MainConfig.BUTTON_PANEL_LAYOUT));
