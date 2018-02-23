@@ -10,7 +10,9 @@ public class MainConfig {
 
 	public static final String TITLE = "Visual Novel Engine";
 	public static final Dimension MAIN_FRAME_DIMENSION = new Dimension(800, 600);
+	public static final String MAIN_FRAME_ICON_PATH = "./resources/icon.png";
 	public static final String SCENE_CONFIG_FILE_PATH = "./resources/sceneConfig.xml";
+	public static final String SCENE_AMBIENT_SOUND_PATH = "./resources/sounds/ambient.mp3";
 	public static final RelativeLayout SCENE_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);
 	public static final RelativeLayout TEXT_PANEL_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);
 	public static final RelativeLayout IMAGE_PANEL_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);

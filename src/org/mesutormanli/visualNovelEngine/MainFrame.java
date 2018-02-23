@@ -5,7 +5,6 @@ import javax.swing.JFrame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
-import java.awt.Toolkit;
 
 @SuppressWarnings("serial")
 public class MainFrame extends JFrame {
@@ -14,9 +13,8 @@ public class MainFrame extends JFrame {
 	private Scene scene;
 
 	private MainFrame() {
-		setIconImage(new ImageIcon("./resources/icon.png").getImage());
-
 		LOGGER.info("MainFrame invoked.");
+		setIconImage(new ImageIcon(MainConfig.MAIN_FRAME_ICON_PATH).getImage());
 		setTitle(MainConfig.TITLE);
 		setSize(MainConfig.MAIN_FRAME_DIMENSION);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);

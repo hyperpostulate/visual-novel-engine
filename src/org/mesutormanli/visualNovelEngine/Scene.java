@@ -44,7 +44,8 @@ public class Scene extends JPanel {
 
 		// Image Panel
 		setImagePanel(new JPanel(MainConfig.IMAGE_PANEL_LAYOUT));
-		getImagePanel().add(new JLabel(new ImageIcon("./resources/images/" + getSceneConfig().getSceneHeadline() + MainConfig.IMAGE_FILE_POSTFIX)));
+		getImagePanel().add(new JLabel(new ImageIcon(
+				"./resources/images/" + getSceneConfig().getSceneHeadline() + MainConfig.IMAGE_FILE_POSTFIX)));
 
 		// Button Panel
 		setButtonPanel(new JPanel(MainConfig.BUTTON_PANEL_LAYOUT));
@@ -72,7 +73,7 @@ public class Scene extends JPanel {
 		add(getImagePanel(), new Float(60));
 		add(getButtonPanel(), new Float(10));
 
-		// new MP3Player(new File("./resources/sounds/ambient.mp3")).play();
+		// new MP3Player(new File(MainConfig.SCENE_AMBIENT_SOUND_PATH)).play();
 
 	}
 
