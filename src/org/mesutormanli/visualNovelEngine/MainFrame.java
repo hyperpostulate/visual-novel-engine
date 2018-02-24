@@ -51,7 +51,7 @@ public class MainFrame extends JFrame {
 		getContentPane().add(this.scene);
 		setVisible(true);
 		LOGGER.info("Scene " + scene.getSceneConfig().getSceneIndex() + " is present.");
-		LOGGER.info("Possible states are: " + scene.getSceneConfig().getWestButtonSceneIndex() + " " + scene.getSceneConfig().getCenterButtonSceneIndex() + "  and" + scene.getSceneConfig().getEastButtonSceneIndex() + ".");
+		LOGGER.info("Possible states are: " + scene.getSceneConfig().getWestButtonSceneIndex() + " " + scene.getSceneConfig().getCenterButtonSceneIndex() + " and " + scene.getSceneConfig().getEastButtonSceneIndex() + ".");
 	}
 	public void initialize() {
 		setScene(new Scene(0));
