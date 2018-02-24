@@ -14,6 +14,7 @@ public class MainFrame extends JFrame {
 
 	private MainFrame() {
 		LOGGER.info("MainFrame invoked.");
+
 		setIconImage(new ImageIcon(MainConfig.MAIN_FRAME_ICON_PATH).getImage());
 		setTitle(MainConfig.TITLE);
 		setSize(MainConfig.MAIN_FRAME_DIMENSION);
@@ -50,8 +51,8 @@ public class MainFrame extends JFrame {
 		getContentPane().add(this.scene);
 		setVisible(true);
 		LOGGER.info("Scene " + scene.getSceneConfig().getSceneIndex() + " is present.");
+		LOGGER.info("Possible states are: " + scene.getSceneConfig().getWestButtonSceneIndex() + " " + scene.getSceneConfig().getCenterButtonSceneIndex() + "  and" + scene.getSceneConfig().getEastButtonSceneIndex() + ".");
 	}
-
 	public void initialize() {
 		setScene(new Scene(0));
 
