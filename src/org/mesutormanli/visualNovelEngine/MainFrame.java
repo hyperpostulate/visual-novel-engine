@@ -2,13 +2,12 @@ package org.mesutormanli.visualNovelEngine;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.log4j.Logger;
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
 
-@SuppressWarnings("serial")
 public class MainFrame extends JFrame {
-	private static final Logger LOGGER = LoggerFactory.getLogger(MainFrame.class);
+	public static final Logger LOGGER = Logger.getLogger(MainFrame.class);
 	private static MainFrame instance;
 	private Scene scene;
 
@@ -21,7 +20,7 @@ public class MainFrame extends JFrame {
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setResizable(false);
-		// setUndecorated(true);
+		//setUndecorated(true);
 
 		// JMenuBar bar = new JMenuBar();
 		// setJMenuBar(bar);

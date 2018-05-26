@@ -1,3 +1,5 @@
 /bin/
 /target/
 /RunnableJAR.xml
+
+\.idea/

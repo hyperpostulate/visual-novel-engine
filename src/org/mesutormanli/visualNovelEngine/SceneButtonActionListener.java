@@ -3,13 +3,12 @@ package org.mesutormanli.visualNovelEngine;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import org.apache.log4j.Logger;
 import org.mesutormanli.visualNovelEngine.config.SceneConfig;
 import org.mesutormanli.visualNovelEngine.config.SceneConfigFactory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class SceneButtonActionListener implements ActionListener {
-	private static final Logger LOGGER = LoggerFactory.getLogger(SceneButtonActionListener.class);
+	public static final Logger LOGGER = Logger.getLogger(SceneButtonActionListener.class);
 	private SceneConfig nextSceneConfig;
 
 	public SceneButtonActionListener(int nextSceneIndex) {

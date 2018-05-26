@@ -6,11 +6,11 @@ import java.util.Map;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import org.apache.log4j.Logger;
 
 public class SceneConfigFactory {
-	private static final Logger LOGGER = LoggerFactory.getLogger(SceneConfigFactory.class);
+	public static final Logger LOGGER = Logger.getLogger(SceneConfigFactory.class);
 
 	private static SceneConfigFactory instance;
 	private Map<Integer, SceneConfig> panelConfigMap;
