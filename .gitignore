@@ -1,133 +1,54 @@
-# git-ls-files --others --exclude-from=.git/info/exclude
-# Lines that start with '#' are comments.
-# Some content is used from https://github.com/github/gitignore
+# ---JAVA---
 
-.java-version
-
-rebel.xml
-.DS_Store
-
-# VI generated files
-.*.sw[a-z]
-*.un~
-Session.vim
-
-# IntelliJ Idea generated files
-*.iml
-*.ipr
-*.iws
-.idea
-*plugin.xml
-
-# Eclipse generated files
-*.pydevproject
-.project
-.metadata
-bin/**
-tmp/**
-tmp/**/*
-*~.nib
-.classpath
-.settings/
-.loadpath
-
-# Project generated files
+# Compiled class file
 *.class
+
+# Log file
 *.log
-*.patch
-target/*.jar
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
 *.war
+*.nar
 *.ear
-*.ser
-logs/
-auth-config.xml
-hsqldb:mem:gg*
-.clover/
-db.data
-db.redo
-WebRoot/WEB-INF/classes
-mysql-embedded
-
-# Compression generated files
 *.zip
-*.gz
-*.tar
+*.tar.gz
 *.rar
-*.7z
 
-# Maven generated files
-*.releaseBackup
-release.properties
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# ---MAVEN---
 target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 
-# OS generated files
-*.pid
-*.swp
-*.tmp
-*.old
-*.backup
-*.diff
+# ---JETBRAINS---
 
-# Windows generated files
-Thumbs.db
-Desktop.ini
-$RECYCLE.BIN/
-
-# Linux generated files
-*~
-.directory
-
-# SVN generated files
-.svn
-
-# Local property files
-local.properties
-
-# Local directories
-
-
-MANIFEST.MF
-/bin/
-
-### JetBrains template
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion
-
+.idea/*
 *.iml
 
-## Directory-based project format:
-.idea/
-# if you remove the above rule, at least ignore the following:
+# CMake
+cmake-build-*/
 
-# User-specific stuff:
-# .idea/workspace.xml
-# .idea/tasks.xml
-# .idea/dictionaries
-
-# Sensitive or high-churn files:
-# .idea/dataSources.ids
-# .idea/dataSources.xml
-# .idea/sqlDataSources.xml
-# .idea/dynamic.xml
-# .idea/uiDesigner.xml
-
-# Gradle:
-# .idea/gradle.xml
-# .idea/libraries
-
-# Mongo Explorer plugin:
-# .idea/mongoSettings.xml
-
-## File-based project format:
-*.ipr
+# File-based project format
 *.iws
-
-## Plugin-specific files:
 
 # IntelliJ
-/out/
-
-# mpeltonen/sbt-idea plugin
-.idea_modules/
+out/
 
 # JIRA plugin
 atlassian-ide-plugin.xml
@@ -136,48 +57,76 @@ atlassian-ide-plugin.xml
 com_crashlytics_export_strings.xml
 crashlytics.properties
 crashlytics-build.properties
+fabric.properties
 
+# ---ECLIPSE---
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
 
-### Xcode template
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# PyDev specific (Python IDE for Eclipse)
+*.pydevproject
+
+# CDT-specific (C/C++ Development Tooling)
+.cproject
+
+# CDT- autotools
+.autotools
+
+# Java annotation processor (APT)
+.factorypath
+
+# PDT-specific (PHP Development Tools)
+.buildpath
+
+# sbteclipse plugin
+.target
+
+# Tern plugin
+.tern-project
+
+# TeXlipse plugin
+.texlipse
+
+# STS (Spring Tool Suite)
+.springBeans
+
+# Code Recommenders
+.recommenders/
+
+# Annotation Processing
+.apt_generated/
+
+# Scala IDE specific (Scala & Java development for Eclipse)
+.cache-main
+.scala_dependencies
+.worksheet
+
+# ---NETBEANS---
+**/nbproject/private/
+**/nbproject/Makefile-*.mk
+**/nbproject/Package-*.bash
 build/
-*.pbxuser
-!default.pbxuser
-*.mode1v3
-!default.mode1v3
-*.mode2v3
-!default.mode2v3
-*.perspectivev3
-!default.perspectivev3
-xcuserdata
-*.xccheckout
-*.moved-aside
-DerivedData
-*.xcuserstate
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
-
-### Jboss template
-jboss/server/all/deploy/project.ext
-jboss/server/default/deploy/project.ext
-jboss/server/minimal/deploy/project.ext
-jboss/server/all/log/*.log
-jboss/server/all/tmp/**/*
-jboss/server/all/data/**/*
-jboss/server/all/work/**/*
-jboss/server/default/log/*.log
-jboss/server/default/tmp/**/*
-jboss/server/default/data/**/*
-jboss/server/default/work/**/*
-jboss/server/minimal/log/*.log
-jboss/server/minimal/tmp/**/*
-jboss/server/minimal/data/**/*
-jboss/server/minimal/work/**/*
-
-# deployed package files #
-
-*.DEPLOYED
-
-
-### JDeveloper template
+# ---JDEVELOPER---
 # default application storage directory used by the IDE Performance Cache feature
 .data/
 
@@ -192,81 +141,65 @@ javadoc/
 # lock file, a part of Oracle Credential Store Framework
 cwallet.sso.lck
 
-### Eclipse template
-*.pydevproject
-.metadata
-.gradle
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
+# ---LINUX---
+*~
 
-# Eclipse Core
-.project
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
 
-# External tool builders
-.externalToolBuilders/
+# KDE directory preferences
+.directory
 
-# Locally stored "Eclipse launch configurations"
-*.launch
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
-# CDT-specific
-.cproject
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
-# JDT-specific (Eclipse Java Development Tools)
-.classpath
+# ---VIM---
+.*.sw[a-z]
+*.un~
+Session.vim
 
-# Java annotation processor (APT)
-.factorypath
+# ---MACOS---
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-# PDT-specific
-.buildpath
+# Icon must end with two \r
+Icon
 
-# sbteclipse plugin
-.target
+# Thumbnails
+._*
 
-# TeXlipse plugin
-.texlipse
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
 
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
-### Java template
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
-### Maven template
-target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
-
-
-### Windows template
-# Windows image file caches
+# ---WINDOWS---
+# Windows thumbnail cache files
 Thumbs.db
 ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
 
 # Folder config file
-Desktop.ini
+[Dd]esktop.ini
 
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
@@ -274,11 +207,9 @@ $RECYCLE.BIN/
 # Windows Installer files
 *.cab
 *.msi
+*.msix
 *.msm
 *.msp
 
 # Windows shortcuts
 *.lnk
-
-
-
