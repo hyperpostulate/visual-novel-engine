@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<story>
+    <scene>
+        <index>0</index>
+        <headLine>Headline of Scene 0</headLine>
+        <text>Text of the Scene</text>
+        <button>
+            <description>To Scene 1</description>
+            <targetSceneIndex>1</targetSceneIndex>
+        </button>
+        <button>
+            <description>To Scene 2</description>
+            <targetSceneIndex>2</targetSceneIndex>
+        </button>
+        <button>
+            <description>To Scene 3</description>
+            <targetSceneIndex>3</targetSceneIndex>
+        </button>
+    </scene>
+    <scene>
+        <index>1</index>
+        <headLine>Headline of Scene 1</headLine>
+        <text>Text of the Scene</text>
+        <button>
+            <description>To Scene 2</description>
+            <targetSceneIndex>2</targetSceneIndex>
+        </button>
+        <button>
+            <description>To Scene 3</description>
+            <targetSceneIndex>3</targetSceneIndex>
+        </button>
+        <button>
+            <description>To Scene 4</description>
+            <targetSceneIndex>4</targetSceneIndex>
+        </button>
+
+    </scene>
+
+</story>
