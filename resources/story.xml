@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <story>
+
     <scene>
         <index>0</index>
         <headLine>Headline of Scene 0</headLine>
@@ -17,6 +18,7 @@
             <targetSceneIndex>3</targetSceneIndex>
         </button>
     </scene>
+
     <scene>
         <index>1</index>
         <headLine>Headline of Scene 1</headLine>
@@ -33,7 +35,6 @@
             <description>To Scene 4</description>
             <targetSceneIndex>4</targetSceneIndex>
         </button>
-
     </scene>
 
 </story>

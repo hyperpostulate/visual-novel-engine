@@ -2,11 +2,17 @@ package org.mesutormanli.visualNovelEngine;
 
 import org.mesutormanli.visualNovelEngine.config.StoryConfigFactory;
 import org.mesutormanli.visualNovelEngine.config.story.SceneConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SceneButtonActionListener implements ActionListener {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(SceneButtonActionListener.class);
+
+
     private SceneConfig nextSceneConfig;
 
     SceneButtonActionListener(int nextSceneIndex) {
@@ -17,10 +23,10 @@ public class SceneButtonActionListener implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         if (null != nextSceneConfig) {
             Scene nextPanel = new Scene(nextSceneConfig);
-            System.out.println("Next scene will be " + nextSceneConfig.getIndex() + ".");
+            LOGGER.info("Next scene will be " + nextSceneConfig.getIndex() + ".");
             MainFrame.getInstance().setScene(nextPanel);
         } else {
-            System.out.println("Intended scene is not found in scene configuration. Exiting...");
+            LOGGER.error("Intended scene is not found in story. Exiting...");
             MainFrame.getInstance().dispose();
         }
 

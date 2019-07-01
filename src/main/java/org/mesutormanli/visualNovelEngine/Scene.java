@@ -1,9 +1,9 @@
 package org.mesutormanli.visualNovelEngine;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
 import org.mesutormanli.visualNovelEngine.config.StoryConfigFactory;
-import org.mesutormanli.visualNovelEngine.config.story.ButtonConfig;
 import org.mesutormanli.visualNovelEngine.config.story.SceneConfig;
 import org.mesutormanli.visualNovelEngine.util.StringUtils;
 
@@ -11,6 +11,7 @@ import javax.swing.*;
 import javax.swing.border.TitledBorder;
 
 @Data
+@EqualsAndHashCode(callSuper = true)
 @SuppressWarnings("serial")
 public class Scene extends JPanel {
     private SceneConfig sceneConfig;
@@ -41,13 +42,14 @@ public class Scene extends JPanel {
         // Button Panel
         this.buttonPanel = new JPanel(MainConfig.BUTTON_PANEL_LAYOUT);
 
-        for (ButtonConfig buttonConfig : getSceneConfig().getButtonConfigList()) {
-            if (StringUtils.isNotEmpty(buttonConfig.getDescription())) {
-                JButton button = new JButton(buttonConfig.getDescription());
-                button.addActionListener(new SceneButtonActionListener(buttonConfig.getTargetSceneIndex()));
-                this.buttonPanel.add(button);
-            }
-        }
+        this.sceneConfig.getButtonConfigList()
+                .stream()
+                .filter(buttonConfig -> StringUtils.isNotEmpty(buttonConfig.getDescription()))
+                .forEachOrdered(buttonConfig -> {
+                    JButton button = new JButton(buttonConfig.getDescription());
+                    button.addActionListener(new SceneButtonActionListener(buttonConfig.getTargetSceneIndex()));
+                    this.buttonPanel.add(button);
+                });
 
 
         // Add subpanels to GamePanel

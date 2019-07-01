@@ -2,6 +2,8 @@ package org.mesutormanli.visualNovelEngine.config;
 
 import org.mesutormanli.visualNovelEngine.config.story.SceneConfig;
 import org.mesutormanli.visualNovelEngine.config.story.StoryConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
@@ -11,6 +13,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class StoryConfigFactory {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(StoryConfigFactory.class);
 
     private static StoryConfigFactory instance;
     private Map<Integer, SceneConfig> panelConfigMap;
@@ -26,13 +30,12 @@ public class StoryConfigFactory {
             configContainer = (StoryConfig) jaxbUnmarshaller
                     .unmarshal(new File(MainConfig.STORY_CONFIG_FILE_PATH));
         } catch (JAXBException e) {
-            System.out.println("Configuration could not be read. Exiting...");
+            LOGGER.error("Configuration could not be read. Exiting...", e);
             System.exit(1);
         }
 
-        for (SceneConfig conf : configContainer.getSceneConfigList()) {
-            panelConfigMap.put(conf.getIndex(), conf);
-        }
+        configContainer.getSceneConfigList()
+                .forEach(conf -> panelConfigMap.put(conf.getIndex(), conf));
 
     }
 

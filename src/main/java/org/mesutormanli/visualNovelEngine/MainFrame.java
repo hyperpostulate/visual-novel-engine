@@ -1,11 +1,15 @@
 package org.mesutormanli.visualNovelEngine;
 
 import org.mesutormanli.visualNovelEngine.config.MainConfig;
-import org.mesutormanli.visualNovelEngine.config.story.ButtonConfig;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
+import java.util.stream.Collectors;
 
 class MainFrame extends JFrame {
+
+    private static final Logger LOGGER = LoggerFactory.getLogger(MainFrame.class);
     private static MainFrame instance;
     private Scene scene;
 
@@ -35,11 +39,15 @@ class MainFrame extends JFrame {
         this.scene = scene;
         getContentPane().add(this.scene);
         setVisible(true);
-        System.out.println("Scene " + scene.getSceneConfig().getIndex() + " is present.");
-        System.out.println("Possible states are: ");
-        for (ButtonConfig buttonConfig : scene.getSceneConfig().getButtonConfigList()) {
-            System.out.println(buttonConfig.getTargetSceneIndex());
-        }
+
+        LOGGER.info("Scene " + scene.getSceneConfig().getIndex() + " is present.");
+
+        String possibleStates = scene.getSceneConfig().getButtonConfigList()
+                .stream()
+                .map(buttonConfig -> String.valueOf(buttonConfig.getTargetSceneIndex()))
+                .collect(Collectors.joining(", ", "Possible states are: ", "."));
+
+        LOGGER.info(possibleStates);
     }
 
     void initialize() {
