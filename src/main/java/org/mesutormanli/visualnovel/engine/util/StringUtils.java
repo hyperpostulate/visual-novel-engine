@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine.util;
+package org.mesutormanli.visualnovel.engine.util;
 
 public class StringUtils {
     public static String wrapLabelString(String unWrapped) {

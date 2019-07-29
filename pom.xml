@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>org.mesutormanli</groupId>
-    <artifactId>visualNovelEngine</artifactId>
+    <artifactId>visual-novel-engine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>VisualNovelEngine</name>
+    <name>visual-novel-engine</name>
     <description>A (yet another) visual novel engine with Spring Boot and Java Swing API.</description>
 
     <properties>

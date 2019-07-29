@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine;
+package org.mesutormanli.visualnovel.engine;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

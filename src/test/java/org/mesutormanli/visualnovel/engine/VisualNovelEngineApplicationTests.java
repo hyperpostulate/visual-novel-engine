@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine;
+package org.mesutormanli.visualnovel.engine;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

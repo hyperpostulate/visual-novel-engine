@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine.util;
+package org.mesutormanli.visualnovel.engine.util;
 
 import java.awt.*;
 import java.util.HashMap;
@@ -323,7 +323,7 @@ public class RelativeLayout implements LayoutManager2, java.io.Serializable {
      * @param target the container in which to do the layout
      * @return the preferred dimensions to lay out the
      * subcomponents of the specified container
-     * @see org.mesutormanli.visualNovelEngine.util.RelativeLayout#minimumLayoutSize
+     * @see RelativeLayout#minimumLayoutSize
      * @see java.awt.Container#getPreferredSize()
      */
     public Dimension preferredLayoutSize(Container parent) {
@@ -349,7 +349,7 @@ public class RelativeLayout implements LayoutManager2, java.io.Serializable {
      * @param target the container in which to do the layout
      * @return the minimum dimensions needed to lay out the
      * subcomponents of the specified container
-     * @see org.mesutormanli.visualNovelEngine.util.RelativeLayout#preferredLayoutSize
+     * @see RelativeLayout#preferredLayoutSize
      * @see java.awt.Container#doLayout
      */
     public Dimension minimumLayoutSize(Container parent) {

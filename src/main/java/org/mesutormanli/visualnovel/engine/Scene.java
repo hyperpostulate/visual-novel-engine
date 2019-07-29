@@ -1,11 +1,11 @@
-package org.mesutormanli.visualNovelEngine;
+package org.mesutormanli.visualnovel.engine;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import org.mesutormanli.visualNovelEngine.config.MainConfig;
-import org.mesutormanli.visualNovelEngine.config.StoryConfigFactory;
-import org.mesutormanli.visualNovelEngine.config.story.SceneConfig;
-import org.mesutormanli.visualNovelEngine.util.StringUtils;
+import org.mesutormanli.visualnovel.engine.config.MainConfig;
+import org.mesutormanli.visualnovel.engine.config.StoryConfigFactory;
+import org.mesutormanli.visualnovel.engine.config.story.SceneConfig;
+import org.mesutormanli.visualnovel.engine.util.StringUtils;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;

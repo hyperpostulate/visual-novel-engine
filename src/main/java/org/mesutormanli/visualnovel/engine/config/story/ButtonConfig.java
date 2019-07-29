@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine.config.story;
+package org.mesutormanli.visualnovel.engine.config.story;
 
 import lombok.Data;
 

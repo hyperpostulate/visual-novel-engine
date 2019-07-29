@@ -1,4 +1,4 @@
-package org.mesutormanli.visualNovelEngine;
+package org.mesutormanli.visualnovel.engine;
 
 import org.pushingpixels.substance.api.skin.SubstanceRavenLookAndFeel;
 import org.slf4j.Logger;

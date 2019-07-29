@@ -1,6 +1,6 @@
-package org.mesutormanli.visualNovelEngine;
+package org.mesutormanli.visualnovel.engine;
 
-import org.mesutormanli.visualNovelEngine.config.MainConfig;
+import org.mesutormanli.visualnovel.engine.config.MainConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

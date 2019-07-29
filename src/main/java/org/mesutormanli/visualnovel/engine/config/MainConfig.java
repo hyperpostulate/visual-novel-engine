@@ -1,6 +1,6 @@
-package org.mesutormanli.visualNovelEngine.config;
+package org.mesutormanli.visualnovel.engine.config;
 
-import org.mesutormanli.visualNovelEngine.util.RelativeLayout;
+import org.mesutormanli.visualnovel.engine.util.RelativeLayout;
 
 import java.awt.*;
 
