@@ -14,7 +14,7 @@ class MainFrame extends JFrame {
     private Scene scene;
 
     private MainFrame() {
-        System.out.println("MainFrame invoked.");
+        LOGGER.info("MainFrame invoked.");
 
         setIconImage(new ImageIcon(MainConfig.MAIN_FRAME_ICON_PATH).getImage());
         setTitle(MainConfig.TITLE);

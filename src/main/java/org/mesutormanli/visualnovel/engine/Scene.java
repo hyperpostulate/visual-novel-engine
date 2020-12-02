@@ -12,7 +12,6 @@ import javax.swing.border.TitledBorder;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-@SuppressWarnings("serial")
 public class Scene extends JPanel {
     private SceneConfig sceneConfig;
     private JPanel textPanel;
