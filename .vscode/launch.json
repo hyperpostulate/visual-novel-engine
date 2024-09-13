@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-VisualNovelEngineApplication<visual-novel-engine>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.mesutormanli.visualnovel.engine.VisualNovelEngineApplication",
+            "projectName": "visual-novel-engine",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
