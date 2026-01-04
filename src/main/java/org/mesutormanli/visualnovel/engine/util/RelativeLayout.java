@@ -415,7 +415,7 @@ public class RelativeLayout implements LayoutManager2, java.io.Serializable {
                 Dimension d = component.getPreferredSize();
                 spaceAvailable -= d.width;
             } else {
-                relativeTotal += constraint.doubleValue();
+                relativeTotal += constraint.floatValue();
             }
         }
 
