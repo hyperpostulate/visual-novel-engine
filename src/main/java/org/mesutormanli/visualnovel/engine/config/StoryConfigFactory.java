@@ -4,50 +4,50 @@ import org.mesutormanli.visualnovel.engine.config.story.SceneConfig;
 import org.mesutormanli.visualnovel.engine.config.story.StoryConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-import java.io.File;
+import jakarta.xml.bind.JAXBContext;
+import jakarta.xml.bind.JAXBException;
+import jakarta.xml.bind.Unmarshaller;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class StoryConfigFactory {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(StoryConfigFactory.class);
 
-    private static StoryConfigFactory instance;
     private Map<Integer, SceneConfig> panelConfigMap;
 
-    private StoryConfigFactory() {
-        StoryConfig configContainer = null;
+    public StoryConfigFactory(MainConfig mainConfig) {
         panelConfigMap = new HashMap<>();
 
         try {
             JAXBContext jaxbContext = JAXBContext.newInstance(StoryConfig.class);
             Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
 
-            configContainer = (StoryConfig) jaxbUnmarshaller
-                    .unmarshal(new File(MainConfig.STORY_CONFIG_FILE_PATH));
-        } catch (JAXBException e) {
-            LOGGER.error("Configuration could not be read. Exiting...", e);
-            System.exit(1);
+            InputStream inputStream = getClass().getClassLoader()
+                    .getResourceAsStream(mainConfig.getStoryConfigPath());
+            if (inputStream == null) {
+                throw new IllegalStateException(
+                        "Story config file '" + mainConfig.getStoryConfigPath() + "' not found on classpath");
+            }
+
+            try (inputStream) {
+                StoryConfig configContainer = (StoryConfig) jaxbUnmarshaller.unmarshal(inputStream);
+
+                configContainer.getSceneConfigList()
+                        .forEach(conf -> panelConfigMap.put(conf.getIndex(), conf));
+            }
+
+        } catch (JAXBException | IOException e) {
+            throw new IllegalStateException("Could not read story configuration", e);
         }
-
-        configContainer.getSceneConfigList()
-                .forEach(conf -> panelConfigMap.put(conf.getIndex(), conf));
-
     }
 
-    private static StoryConfigFactory getInstance() {
-        if (instance == null) {
-            instance = new StoryConfigFactory();
-        }
-        return instance;
+    public SceneConfig getPanelConfig(int panelIndex) {
+        return panelConfigMap.get(panelIndex);
     }
-
-    public static SceneConfig getPanelConfig(int panelIndex) {
-        return getInstance().panelConfigMap.get(panelIndex);
-    }
-
 }

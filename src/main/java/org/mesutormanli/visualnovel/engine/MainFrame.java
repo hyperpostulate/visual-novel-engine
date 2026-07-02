@@ -1,10 +1,12 @@
 package org.mesutormanli.visualnovel.engine;
 
 import org.mesutormanli.visualnovel.engine.config.MainConfig;
+import org.mesutormanli.visualnovel.engine.config.StoryConfigFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
+import java.net.URL;
 import java.util.stream.Collectors;
 
 class MainFrame extends JFrame {
@@ -12,17 +14,11 @@ class MainFrame extends JFrame {
     private static final Logger LOGGER = LoggerFactory.getLogger(MainFrame.class);
     private static MainFrame instance;
     private Scene scene;
+    private MainConfig mainConfig;
+    private StoryConfigFactory storyConfigFactory;
 
     private MainFrame() {
         LOGGER.info("MainFrame invoked.");
-
-        setIconImage(new ImageIcon(MainConfig.MAIN_FRAME_ICON_PATH).getImage());
-        setTitle(MainConfig.TITLE);
-        setSize(MainConfig.MAIN_FRAME_DIMENSION);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setLocationRelativeTo(null);
-        setResizable(false);
-
     }
 
     static MainFrame getInstance() {
@@ -50,9 +46,21 @@ class MainFrame extends JFrame {
         LOGGER.info(possibleStates);
     }
 
-    void initialize() {
-        setScene(new Scene(0));
+    void initialize(MainConfig mainConfig, StoryConfigFactory storyConfigFactory) {
+        this.mainConfig = mainConfig;
+        this.storyConfigFactory = storyConfigFactory;
 
+        URL iconUrl = getClass().getResource(mainConfig.getIconPath());
+        if (iconUrl != null) {
+            setIconImage(new ImageIcon(iconUrl).getImage());
+        }
+        setTitle(mainConfig.getTitle());
+        setSize(mainConfig.getMainFrameDimension());
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        setResizable(false);
+
+        setScene(new Scene(0, mainConfig, storyConfigFactory));
     }
 
 }

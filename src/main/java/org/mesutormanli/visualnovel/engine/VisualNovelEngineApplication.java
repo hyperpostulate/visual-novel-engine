@@ -7,6 +7,12 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
 @SpringBootApplication
 public class VisualNovelEngineApplication implements CommandLineRunner {
 
+    private final Director director;
+
+    public VisualNovelEngineApplication(Director director) {
+        this.director = director;
+    }
+
     public static void main(String[] args) {
         SpringApplicationBuilder builder = new SpringApplicationBuilder(VisualNovelEngineApplication.class);
         builder.headless(false);
@@ -15,6 +21,6 @@ public class VisualNovelEngineApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Director.action();
+        director.action();
     }
 }

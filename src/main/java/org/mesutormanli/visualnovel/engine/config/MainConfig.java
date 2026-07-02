@@ -1,22 +1,47 @@
 package org.mesutormanli.visualnovel.engine.config;
 
 import org.mesutormanli.visualnovel.engine.util.RelativeLayout;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.awt.*;
 
-
+@Component
 public class MainConfig {
 
-    public static final String TITLE = "Visual Novel Engine";
-    public static final Dimension MAIN_FRAME_DIMENSION = new Dimension(800, 600);
-    public static final String MAIN_FRAME_ICON_PATH = "./resources/icon.png";
-    public static final String STORY_CONFIG_FILE_PATH = "./resources/story.xml";
-    public static final String SCENE_AMBIENT_SOUND_PATH = "./resources/sounds/ambient.mp3";
-    public static final String SCENE_IMAGES_DIR_PATH = "./resources/images/";
-    public static final RelativeLayout SCENE_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);
-    public static final RelativeLayout TEXT_PANEL_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);
-    public static final RelativeLayout IMAGE_PANEL_LAYOUT = new RelativeLayout(RelativeLayout.Y_AXIS);
-    public static final String IMAGE_FILE_POSTFIX = ".gif";
-    public static final FlowLayout BUTTON_PANEL_LAYOUT = new FlowLayout(FlowLayout.CENTER, 10, 20);
+    private final String title;
+    private final Dimension mainFrameDimension;
+    private final String iconPath;
+    private final String storyConfigPath;
+    private final String sceneImagesDirPath;
+    private final String imageFilePostfix;
 
+    public MainConfig(
+            @Value("${app.title:Visual Novel Engine}") String title,
+            @Value("${app.width:800}") int width,
+            @Value("${app.height:600}") int height,
+            @Value("${app.icon-path:/icon.png}") String iconPath,
+            @Value("${app.story-config-path:story.xml}") String storyConfigPath,
+            @Value("${app.scene-images-dir:/images/}") String sceneImagesDirPath,
+            @Value("${app.image-file-postfix:.gif}") String imageFilePostfix
+    ) {
+        this.title = title;
+        this.mainFrameDimension = new Dimension(width, height);
+        this.iconPath = iconPath;
+        this.storyConfigPath = storyConfigPath;
+        this.sceneImagesDirPath = sceneImagesDirPath;
+        this.imageFilePostfix = imageFilePostfix;
+    }
+
+    public String getTitle() { return title; }
+    public Dimension getMainFrameDimension() { return mainFrameDimension; }
+    public String getIconPath() { return iconPath; }
+    public String getStoryConfigPath() { return storyConfigPath; }
+    public String getSceneImagesDirPath() { return sceneImagesDirPath; }
+    public String getImageFilePostfix() { return imageFilePostfix; }
+
+    public RelativeLayout getSceneLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
+    public RelativeLayout getTextPanelLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
+    public RelativeLayout getImagePanelLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
+    public FlowLayout getButtonPanelLayout() { return new FlowLayout(FlowLayout.CENTER, 10, 20); }
 }

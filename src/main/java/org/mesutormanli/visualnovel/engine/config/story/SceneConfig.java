@@ -1,13 +1,11 @@
 package org.mesutormanli.visualnovel.engine.config.story;
 
-import lombok.Data;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlElement;
 import java.util.List;
 
-@Data
 @XmlAccessorType(XmlAccessType.FIELD)
 public class SceneConfig {
 
@@ -17,5 +15,40 @@ public class SceneConfig {
 
     @XmlElement(name = "button")
     private List<ButtonConfig> buttonConfigList;
+
+    public SceneConfig() {
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public String getHeadLine() {
+        return headLine;
+    }
+
+    public void setHeadLine(String headLine) {
+        this.headLine = headLine;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public void setText(String text) {
+        this.text = text;
+    }
+
+    public List<ButtonConfig> getButtonConfigList() {
+        return buttonConfigList;
+    }
+
+    public void setButtonConfigList(List<ButtonConfig> buttonConfigList) {
+        this.buttonConfigList = buttonConfigList;
+    }
 
 }
