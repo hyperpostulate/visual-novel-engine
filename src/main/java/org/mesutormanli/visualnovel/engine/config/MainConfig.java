@@ -1,6 +1,5 @@
 package org.mesutormanli.visualnovel.engine.config;
 
-import org.mesutormanli.visualnovel.engine.util.RelativeLayout;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -39,9 +38,4 @@ public class MainConfig {
     public String getStoryConfigPath() { return storyConfigPath; }
     public String getSceneImagesDirPath() { return sceneImagesDirPath; }
     public String getImageFilePostfix() { return imageFilePostfix; }
-
-    public RelativeLayout getSceneLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
-    public RelativeLayout getTextPanelLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
-    public RelativeLayout getImagePanelLayout() { return new RelativeLayout(RelativeLayout.Y_AXIS); }
-    public FlowLayout getButtonPanelLayout() { return new FlowLayout(FlowLayout.CENTER, 10, 20); }
 }
