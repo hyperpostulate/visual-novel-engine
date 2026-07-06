@@ -275,7 +275,7 @@ The single test class `VisualNovelEngineApplicationTests` verifies:
 
 ## License
 
-This project does not currently have a declared license. All rights reserved by default.
+This project is licensed under the GNU General Public License v3.0. See [LICENSE](LICENSE) for details.
 
 ---
 
@@ -577,7 +577,7 @@ Tek test sınıfı `VisualNovelEngineApplicationTests` şunları doğrular:
 
 ## Lisans
 
-Bu projede şu anda açık bir lisans bulunmamaktadır. Varsayılan olarak tüm hakları saklıdır.
+Bu proje GNU General Public License v3.0 altında lisanslanmıştır. Detaylı bilgi için [LICENSE](LICENSE) dosyasına bakın.
 
 ---
 
