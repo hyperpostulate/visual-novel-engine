@@ -1,10 +1,20 @@
-# visual-novel-engine
+<p align="center">
+  <img src="src/main/resources/icon.png" alt="visual-novel-engine" width="240" height="240">
+</p>
 
-[![Java CI](https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/maven.yml/badge.svg)](https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/maven.yml) [![CodeQL](https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/codeql.yml/badge.svg)](https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/codeql.yml)
+<h1 align="center">visual-novel-engine</h1>
 
-Spring Boot ve Java Swing API ile oluşturulmuş bir görsel roman motoru. Hikayeler, sahnelerin başlık, metin, resim ve dallanma butonları içerdiği XML formatında tanımlanır.
+<p align="center">
+  <a href="https://github.com/hyperpostulate/visual-novel-engine/blob/main/pom.xml"><img src="https://img.shields.io/badge/Java-25-orange.svg" alt="Java 25"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a>
+  <a href="https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/maven.yml"><img src="https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/maven.yml/badge.svg" alt="Java CI"></a>
+  <a href="https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/codeql.yml"><img src="https://github.com/hyperpostulate/visual-novel-engine/actions/workflows/codeql.yml/badge.svg" alt="CodeQL"></a>
+</p>
 
-English version: [README.md](README.md)
+<p align="center">Spring Boot ve Java Swing API ile oluşturulmuş bir görsel roman motoru.</p>
+<p align="center">Hikayeler, sahnelerin başlık, metin, resim ve dallanma butonları içerdiği XML formatında tanımlanır.</p>
+
+<p align="center">English version: <a href="README.md">README.md</a></p>
 
 ---
 
